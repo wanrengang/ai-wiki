@@ -4,7 +4,7 @@ created: 2026-05-12
 updated: 2026-05-12
 type: entity
 tags: [person, company, open-source, agent, trading, finance]
-sources: [~/mywork/code/Vibe-Trading]
+sources: [/run/media/wrg/mywork/code/Vibe-Trading]
 ---
 
 # Vibe-Trading
@@ -83,4 +83,4 @@ vibe-trading run
 
 ---
 
-^[[~/mywork/code/Vibe-Trading]]
+^[[/run/media/wrg/mywork/code/Vibe-Trading]]

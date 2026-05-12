@@ -192,6 +192,13 @@
 - 关联：[[openspec]], [[superpowers]], [[mcp]], [[opencode-platform]]
 - 同步：my-obsidian/02AI与技术/OpenCode铁三角-OpenSpec-Superpowers-OMO完整指南.md
 
+## [2026-05-12] ingest | Supabase 百亿美元估值分析
+- 来源：https://mp.weixin.qq.com/s/N-g5W-gh_4HomEJcpOhgrw（海外独角兽）
+- raw：raw/articles/2026-05-12-supabase-100b-valuation-vibe-coding-backend.md
+- create entities/supabase.md：100亿美元估值 BaaS、4笔收购、Postgres 生态、vibe coding 默认后端
+- 同步：my-obsidian/02AI与技术/2026-05-12-Supabase百亿美元估值-vibe-coding默认后端.md
+- total: 1 raw + 1 entity pages
+
 ## [2026-05-12] clone + research | Vibe-Trading 项目
 - 来源：https://github.com/HKUDS/Vibe-Trading
 - 本地路径：~/mywork/code/Vibe-Trading

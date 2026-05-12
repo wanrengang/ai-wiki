@@ -191,3 +191,11 @@
 - 核心：OpenSpec（规范层）+ Superpowers（能力层）+ OMO（基础设施层）铁三角协作
 - 关联：[[openspec]], [[superpowers]], [[mcp]], [[opencode-platform]]
 - 同步：my-obsidian/02AI与技术/OpenCode铁三角-OpenSpec-Superpowers-OMO完整指南.md
+
+## [2026-05-12] clone + research | Vibe-Trading 项目
+- 来源：https://github.com/HKUDS/Vibe-Trading
+- 本地路径：~/mywork/code/Vibe-Trading
+- 核心：AI量化交易Agent平台，74 Skills，29 Swarm Presets，6数据源
+- create entities/vibe-trading.md
+- 同步：my-obsidian/02AI与技术/Vibe-Trading项目研究报告.md
+- 推送：ai-wiki GitHub

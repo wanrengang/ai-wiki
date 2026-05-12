@@ -5,6 +5,7 @@
 > Last updated: 2026-05-12 | Total pages: 71
 
 ## Entities (39)
+- [[vibe-trading]] - Vibe-Trading：HKUDS开源AI量化交易Agent平台，74 Skills + 29 Swarm Presets
 
 - [[aifut-conference]] - AIFUT 大会：北京亦庄 AI 盛会，1500+ 参会者，聚焦 Agent 与创业
 - [[glmmodel-51]] - 智谱 GLM-5.1：全球首个验证 8 小时持续工作能力的开源模型

@@ -206,3 +206,88 @@
 - create entities/vibe-trading.md
 - 同步：my-obsidian/02AI与技术/Vibe-Trading项目研究报告.md
 - 推送：ai-wiki GitHub
+
+## [2026-05-12] ingest | Reasoning Trap Tool Hallucination (ACL 2026)
+- 来源：arXiv 2510.22977，WeRSS 扫描（今日无高质量公众号内容）
+- raw/articles/2026-05-12-reasoning-trap-tool-hallucination.md（全文）
+- concepts/tool-hallucination-reasoning-trap.md（新建，ACL 2026 论文解读）
+- 核心：推理增强（RL/蒸馏/推理模式）会系统性放大工具幻觉，reliability-capability trade-off 是根本性矛盾
+- 跨链接：[[ai-agent]], [[mcp]], [[test-time-compute-scaling]], [[agent-engineering]], [[harness-engineering]]
+- total: 1 raw + 1 concept page
+
+## [2026-05-13] ingest | 3 篇 AI 内容入库（WeRSS + Lilian Weng + 字节 GRN）
+- 来源：WeRSS 公众号扫描（机器之心、量子位）+ Lilian Weng 博客
+- **WeRSS 评估结果**：今日公众号内容以新闻/软文为主（量子位峰会宣传、励志鸡汤），机器之心 2 篇有技术深度
+- raw/articles/:
+  - 2026-05-13-bytedance-grn-visual-generation.md（字节 GRN，量子位）
+  - 2026-05-13-apo-multi-teacher-mllm-alignment.md（悉尼科大 APO，机器之心）
+  - 2026-05-13-lilian-weng-why-we-think.md（Lilian Weng Why We Think 2025）
+- concepts/bytedance-grn.md（新建）
+- concepts/apo-multi-teacher-mllm-alignment.md（新建）
+- concepts/lilian-weng-why-we-think.md（新建）
+- 跨链接：GRN→[[test-time-compute-scaling]],[[ai-agent]],[[cvpr-2026-video-understanding]]；APO→[[alignment]],[[test-time-compute-scaling]],[[tool-hallucination-reasoning-trap]],[[fine-tuning-with-trl]]；Lilian→[[test-time-compute-scaling]],[[ai-agent]],[[tool-hallucination-reasoning-trap]],[[harness-engineering]]
+- total: 3 raw + 3 concept pages
+
+## [2026-05-14] ingest | 2篇AI内容入库（TriAttention + DYPO）
+- 来源：WeRSS（机器之心 + 量子位）
+- **评估结果**：新智元NVIDIA/MIT/浙大KV压缩有硬核数据；量子位DYPO清华论文有新方法论
+- raw/articles/:
+  - 2026-05-14-triattention-kv-compression-nvidia-mit-zhejiang.md（NVIDIA/MIT/浙大 KV 压缩）
+  - 2026-05-14-dypo-dynamic-policy-optimization-tsinghua.md（清华 DYPO 动态策略优化）
+- concepts/:
+  - concepts/triattention-kv-compression.md（新建，pre-RoPE三角集中度，10.7x内存缩减）
+  - concepts/dypo-dynamic-policy-optimization.md（新建，Easy/Hard/Mid三类样本动态路由）
+- 跨链接：TriAttention→[[test-time-compute-scaling]],[[openclaw]],[[vibe-trading]],[[inference-optimization]]；DYPO→[[on-policy-distillation-thunlp]],[[fine-tuning-with-trl]],[[test-time-compute-scaling]],[[tool-hallucination-reasoning-trap]]
+- total: 2 raw + 2 concept pages
+
+## [2026-05-14] ingest | 3篇AI内容入库（清华OPD + Codex Goal Mode + Ralph Loop三厂大战）
+- 来源：WeRSS（机器之心 x2 + 新智元 x1）
+- **评估结果**：今日量子位内容以峰会宣传为主不入库；机器之心清华蒸馏论文有新发现（高分≠新知识）；新智元两篇技术深度足够
+- raw/articles/:
+  - 2026-05-14-thunlp-opd-on-policy-distillation.md（清华 THUNLP On-Policy Distillation）
+  - 2026-05-14-codex-goal-mode-scientific-breakthrough.md（Codex Goal Mode 40倍科研效率）
+  - 2026-05-14-ralph-loop-goal-mode-war.md（OpenAI/Anthropic/Hermes 三厂 Goal Mode 实现对比）
+- concepts/:
+  - concepts/on-policy-distillation-thunlp.md（新建，思维模式一致性 + 高分≠新知识）
+  - concepts/codex-goal-mode-ai-science.md（新建，RSI概率>60%，SWE-bench 2%→93.9%）
+  - concepts/ralph-loop-goal-mode-war.md（新建，Codex持久化 vs Hermes看板 vs Claude裁判模型）
+- 跨链接：OPD→[[fine-tuning-with-trl]],[[test-time-compute-scaling]],[[ai-agent]]；Codex→[[test-time-compute-scaling]],[[ai-scientists-autonomous-research]],[[openai-frontier]],[[hermes-agent]]；Ralph→[[hermes-agent]],[[openai-frontier]],[[test-time-compute-scaling]],[[harness-engineering]]
+- total: 3 raw + 3 concept pages
+
+## [2026-05-13] ingest | LLM 自主设计神经网络架构 (arXiv 2601.02997)
+- 论文：From Memorization to Creativity: LLM as a Designer of Novel Neural-Architectures
+- 作者：Waleed Khalid, Dmitry Ignatov, Radu Timofte (University of Würzburg)
+- 核心：DeepSeek-Coder-7B 经 22 轮闭环迭代微调，进化为可靠的神经网络架构生成器
+- 关键结果：CIFAR-10 生成 455 个有效新架构，准确率从 28% 提升至 51%
+- raw/articles/2026-05-13-llm-neural-architecture-design-2601.02997.md（新建）
+- concepts/llm-neural-architecture-design.md（新建）
+- entities/khalid-ignatov-timofte-nas.md（新建）
+- 跨链接：[[test-time-compute-scaling]], [[fine-tuning-with-trl]], [[agent-engineering]], [[ai-scientists-autonomous-research]]
+- total: 1 raw + 1 concept page + 1 entity page
+
+## [2026-05-15] ingest | 3篇AI内容入库（TriAttention更新 + Kimi K2.6基建 + Agentic Code Reasoning）
+- 来源：WeRSS（新智元 x1 + 量子位 x1）+ ArXiv x1
+- raw/articles/:
+  - 2026-05-15-triattention-nvidia-mit-zju.md（新智元，NVIDIA/MIT/浙大联合开源）
+  - 2026-05-15-kimi-k2-6-ai-infra-tidb.md（量子位，Kimi K2.6数据库架构）
+  - 2026-05-15-agentic-code-reasoning-2603.01896.md（arXiv 2603.01896，Meta半形式化代码推理）
+- concepts/:
+  - concepts/triattention-kv-compression.md（更新，追加新来源）
+  - concepts/agentic-code-reasoning.md（新建，Semi-formal Reasoning方法）
+  - concepts/kimi-k2-6-ai-infra.md（新建，TiDB Cloud多租户架构）
+- TriAttention跨链接：[[test-time-compute-scaling]], [[openclaw]], [[vibe-trading]]
+- Agentic Code Reasoning跨链接：[[openclaw]], [[ai-agent]], [[test-time-compute-scaling]]
+- Kimi K2.6 AI基建跨链接：[[mem0]], [[rag]], [[test-time-compute-scaling]]
+- total: 3 raw + 2 new concept pages + 1 updated
+
+## [2026-05-15] ingest | 2篇AI内容入库（Claude角色混淆Bug + Decoction经验提精）
+- 来源：WeRSS（新智元 x1）+ ArXiv x1
+- **评估结果**：Claude角色混淆是claude-coded agent安全架构的严重bug，有学术论文支撑；Decoction是agent记忆优化的新范式，有系统性实验
+- raw/articles/:
+  - 2026-05-15-claude-role-confusion-bug.md（新智元，Claude最严重bug）
+  - 2026-05-15-decoction-experience-llm-agents-2604.04373.md（arXiv 2604.04373，经验提精）
+- concepts/:
+  - concepts/claude-role-confusion-bug.md（新建，角色混淆Bug与AI Agent权限安全）
+  - concepts/decoction-experience-memory.md（新建，经验提精与记忆优化新范式）
+- 跨链接：角色混淆→[[test-time-compute-scaling]],[[ai-agent]],[[anthropic-claude-roadmap-2026]],[[mcp]]；Decoction→[[test-time-compute-scaling]],[[rag]],[[ai-agent]],[[mem0]]
+- total: 2 raw + 2 concept pages

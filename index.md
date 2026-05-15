@@ -2,7 +2,7 @@
 
 > 内容目录。所有 wiki 页面按类型分类，每页一行摘要。
 > 查阅前先读此文件，快速定位相关页面。
-> Last updated: 2026-05-12 | Total pages: 72
+> Last updated: 2026-05-15 | Total pages: 87
 
 ## Entities (39)
 - [[supabase]] - Supabase：百亿美元估值 BaaS 平台，vibe coding 的默认后端，700万用户
@@ -38,6 +38,7 @@
 - [[mem0]] - mem0：AI Agent 通用记忆层（48K Stars）
 - [[llama-index]] - LlamaIndex：文档 Agent & 数据索引框架（47K Stars）
 - [[test-time-compute-scaling]] - Test-Time Compute Scaling：CoT推理、RL自纠正、Budget Forcing、DeepSeek-R1 Aha Moment
+- [[tool-hallucination-reasoning-trap]] - Tool Hallucination & Reasoning Trap：推理增强会放大工具幻觉，ACL 2026（Yin et al.）
 - [[lenvm]] - LenVM：token 级长度控制模型，3B 胜 GPT-5.4/Claude（可扩展价值预训练）
 - [[ruflo]] - Ruflo：Claude Code Agent编排平台，48K Stars，100+ Agents + Swarm联邦协作
 - [[openclaw-wechat-toolkit]] - OpenClaw 微信工具包：公众号搜索→下载→洗稿→发布全流程
@@ -45,8 +46,11 @@
 - [[opencode-sdk-series]] - OpenCode SDK 技术博客系列：企业级 AI Agent 运行时框架
 - [[ds4c]] - ds4.c：Redis之父antirez打造的DeepSeek V4专用推理引擎，Metal-only
 - [[ds4c-deepseek-v4]] - ds4.c × DeepSeek V4：Redis之父专造V4推理引擎，Mac Metal跑Flash
+- [[khalid-ignatov-timofte-nas]] - Khalid/Ignatov/Timofte：维尔茨堡大学三人组，LLM自主设计神经网络架构论文作者
 
-## Concepts (29)
+## Concepts (35)
+- [[agentic-code-reasoning]] - Agentic Code Reasoning：Meta半形式化代码推理，Semi-formal Reasoning让LLM Agent像形式化验证一样做代码分析，Patch Equivalence准确率93%（Agent无需执行代码）
+- [[kimi-k2-6-ai-infra]] - Kimi K2.6 AI基建：TiDB Cloud多租户+Warm Pool+Scale-to-Zero，"人手一个数据库"在Agent时代工程可行，90%+集群由AI Agent创建
 - [[opencode-toolkit-iron-triangle]] - OpenCode 铁三角：OpenSpec + Superpowers + OMO 三工具对比与协作工作流
 - [[dario-amodei-2028-prediction]] - Dario Amodei 2028预测：60%概率 AI 自我制造，Scaling Laws 驱动
 - [[superpowers-ai-coding-sop]] - Superpowers SOP：AI编程工作流规范，17款工具支持（含Hermes Agent）
@@ -60,9 +64,11 @@
 - [[ai-scientists-autonomous-research]] - AI Scientists：四个自主研究尝试，仅一成功，失败主因是实现偏差
 - [[harness-engineering]] - Harness Engineering：PE→CE→HE 演进，约束越多 Agent 干得越好
 - [[enterprise-skill-architecture]] - 企业级 Skill 体系：从 SOP 到 AI 能力网络
+- [[llm-neural-architecture-design]] - LLM 神经网络架构设计：arXiv 2601.02997，LLM自主设计CNN架构（455个新架构，CIFAR-10 51%）
 - [[openclaw-skills-list]] - OpenClaw Skills 榜单：近两周热门 TOP15 + 办公领域分布
+- [[on-policy-distillation-thunlp]] - On-Policy Distillation 两大法则：思维模式一致性 + 高分≠新知识（清华 THUNLP）
+- [[openspec]] - OpenSpec：用 Spec 管需求，AI 编码契约机制，Token 消耗降 30%-50%
 - [[superpowers-claude-code-workflow]] - Superpowers Claude Code：五大场景工作流规范
-- [[openclaw-temporal-integration]] - OpenClaw Temporal 集成：嘴指挥手干活
 - [[feishu-lark-hermes-comparison]] - 飞书钉钉赫尔墨斯对比：三大 CLI 工具选型指南
 - [[anthropic-tpu-advantage]] - Anthropic vs OpenAI TPU：Claude 首超 OpenAI（2026-04-07）
 - [[agent-engineering]] - Agent 工程化：实战指南
@@ -73,13 +79,23 @@
 - [[claw-dispatch-business-war]] - Claude Dispatch 商战分析
 - [[mcp]] - MCP（Model Context Protocol）：AI 上下文协议
 - [[openclaw-multi-feishu-memory]] - OpenClaw 多飞书机器人记忆体系
-- [[openspec]] - OpenSpec：用 Spec 管需求，AI 编码契约机制，Token 消耗降 30%-50%
 - [[rag]] - RAG（检索增强生成）：知识增强技术
+- [[ralph-loop-goal-mode-war]] - Ralph Loop 三厂大战：OpenAI Codex / Anthropic Claude / Hermes 三种 Goal Mode 实现对比
+- [[codex-goal-mode-ai-science]] - Codex Goal Mode：1小时56分完成博士80小时任务，40倍科研效率提升，RSI 概率>60%
 - [[gbrain]] - GBrain：YC CEO 的 AI Agent 知识脑，自织知识图谱 + 34 skills + 混合搜索 P@5 49.1%
-- [[agent-engineering]] - Agent 工程化：规划、记忆、工具协作实战指南
-- [[ai-agent]] - AI Agent：自主智能体核心能力框架（5C 模型）
+- [[ai-scientists-autonomous-research]] - AI Scientists：四个自主研究尝试，仅一成功，失败主因是实现偏差
+- [[harness-engineering]] - Harness Engineering：PE→CE→HE 演进，约束越多 Agent 干得越好
+- [[enterprise-skill-architecture]] - 企业级 Skill 体系：从 SOP 到 AI 能力网络
+- [[llm-neural-architecture-design]] - LLM 神经网络架构设计：arXiv 2601.02997，LLM自主设计CNN架构（455个新架构，CIFAR-10 51%）
 - [[openai-frontier]] - OpenAI Frontier：企业级 AI 代理平台
 - [[chrome-devtools-protocol]] - Chrome DevTools Protocol：浏览器控制协议
+- [[claude-role-confusion-bug]] - Claude 角色混淆 Bug：百万上下文成降智重灾区，AI Agent 权限安全结构性威胁
+- [[decoction-experience-memory]] - Decoction 经验提精：中等记忆规模最优，Agent 上下文策略新范式
+- [[bytedance-grn]] - ByteDance GRN：第三条视觉生成路线，迭代细化消除误差累积（超越DiT/MaskGIT）
+- [[apo-multi-teacher-mllm-alignment]] - APO（ICML 2026）：多教师蒸馏中将概念漂移转化为动态约束，7B超越GPT-5
+- [[lilian-weng-why-we-think]] - Lilian Weng Why We Think：LLM推理机制深度解析，Budget Forcing、自我纠错、自适应计算
+- [[triattention-kv-compression]] - TriAttention：MIT/NVIDIA/浙大 KV 选择性压缩，10.7倍内存缩减 + 2.5倍吞吐
+- [[dypo-dynamic-policy-optimization]] - DYPO：清华动态策略优化，Easy跳过/Hard多教师蒸馏/Mid GAL强化学习
 
 ## Comparisons (1)
 

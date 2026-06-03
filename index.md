@@ -2,7 +2,7 @@
 
 > 内容目录。所有 wiki 页面按类型分类，每页一行摘要。
 > 查阅前先读此文件，快速定位相关页面。
-|> Last updated: 2026-06-03 | Total pages: 121
+|> Last updated: 2026-06-03 | Total pages: 122
 
 ## Entities (40)
 - [[gram-generative-recursive-reasoning]] - GRAM：Yoshua Bengio 并行递归推理模型，16步+20并行 > 320步串行（arXiv 2605.19376）
@@ -123,6 +123,7 @@
 - [[manyih]] - ManyIH：JHU多层指令层级基准，12层冲突下顶级模型准确率仅40%，风格合规是瓶颈
 - [[rsagent]] - RSAgent：多模态大模型多轮工具调用视觉分割，ReasonSeg gIoU 66.5%，超越 Seg-Zero-7B 9%（ICML 2026）
 - [[swarmharness]] - SwarmHarness：去中心化算力激励协议，DHT+Shapley值无需区块链，HarnessAPI 多节点扩展
+- [[swe-atlas]] - SWE Atlas：Scale AI编程基准，284道工程题评估代码理解/测试/重构，Pass@1最高43.49%但三次通过率骤降30-50%（arXiv 2605.08366）
 - [[amd-mxfp4-fp4-training]] - AMD MXFP4：原生 FP4 训练新纪元，Llama 3.1-8B 训练加速 9-10%（arXiv 2605.09825）
 
 ## Comparisons (1)

@@ -584,6 +584,16 @@
 - 主动发现：从 arXiv cs.AI listing 发现今日新提交，AutoSci 是北大 2026 系统，自演化能力突出，值得入库
 - 总入库：1 raw + 1 更新 concepts
 
+## [2026-06-03] ingest | SWE Atlas - Scale AI编程工程能力基准 (WeChat 新智元)
+- 来源：WeRSS DB（微信公众号「新智元」2026-05-23）
+- 主题：SWE Atlas — Scale AI发布的284道工程题基准，评估代码理解/测试编写/重构；Pass@1最高43.49%（GPT-5.4），但三次通过率骤降30-50%；揭示当前AI编程模型是"优秀补丁工、糟糕工程师"
+- raw/articles/：2026-06-03-swe-atlas-scale-ai-coding-benchmark.md（新建）
+- concepts/：concepts/swe-atlas.md（新建）
+- 跨链接：swe-atlas → [[harness-engineering]], [[agent-production-evaluation]], [[claude-code-insights]], [[test-time-compute-scaling]]
+- WeRSS 情况：DB最新文章 2026-05-24，多为新闻简讯；新智元「AI编程进入下半场」有技术深度入库
+- 静默项：Harness工程文（2026-06-02已入库，sha256一致）、GRAM Bengio文（2026-05-24已入库）、PyraMathBench arXiv（质量一般）
+- 总入库：1 raw + 1 concepts
+
 ## [2026-06-02] ingest | 2篇内容入库（Agent生产评估 + Harness五子系统）
 - 来源：WeRSS DB（机器之心 + 新智元，2026-05-24）
 - **评估结果**：Agent生产评估是有系统方法论的技术文章，Harness工程有Anthropic和OpenAI双证据；均有技术深度，值得入库

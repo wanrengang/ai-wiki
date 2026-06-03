@@ -1,10 +1,11 @@
 ---
 title: Capability Evolver
 created: 2026-03-03
-updated: 2026-03-03
+updated: 2026-05-22
 type: entity
 tags: [AI-agent, self-evolution, OpenClaw, GEP]
 sources: [raw/articles/2026-03-03-Capability-Evolver-自我进化引擎深度解析.md]
+confidence: high
 ---
 
 # Capability Evolver
@@ -112,9 +113,23 @@ node index.js --loop
 | GitHub Stars | 1,064 |
 | Forks | 355 |
 
+## 与 MOSS 的关系
+
+MOSS（arXiv:2605.22794）将 Capability Evolver 的思路扩展到**源代码层**。关键区别：
+
+| | Capability Evolver | MOSS |
+|---|---|---|
+| **进化范围** | 文本可修改层（skill files、prompts、memory schemas） | 源代码层（harness、路由逻辑、hook 顺序） |
+| **进化媒介** | 文本/配置 | 源代码 |
+| **图灵完备** | ❌ | ✅ |
+| **触达能力** | 受限于文本层 | 触达所有代码层 |
+
+MOSS 的核心主张：Capability Evolver 等现有系统只能修改文本层，而结构性故障（路由 bug、hook 顺序错误）只能在代码层修复——这是 Capability Evolver 体系的盲区，而 MOSS 填补了这个空白。
+
 ## 相关概念
 
 - [[AI-Agent]]
 - [[OpenCLAW]]
 - [[Self-Evolution]]
 - [[GEP-Protocol]]
+- [[moss-source-level-self-evolution]] — 源代码级自进化，MOSS 将此思路扩展到代码层

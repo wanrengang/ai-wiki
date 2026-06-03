@@ -1,7 +1,7 @@
 ---
 title: AI Scientists 自主研究尝试
 created: 2026-05-10
-updated: 2026-05-10
+updated: 2026-06-01
 type: concept
 tags: [research, agent, alignment]
 sources: [raw/articles/2026-05-10-ai-scientists-four-autonomous-research-attempts.md]
@@ -35,7 +35,17 @@ Paper Outlining Agent → Revision Agent
 | MARL-1 | 多智能体RL | 执行阶段失败 | Implementation Drift、数据偏差 |
 | WM-1 | 世界模型 | 评估阶段失败 | Implementation Drift、缺乏科学品味 |
 | WM-2 | 世界模型 | 评估阶段失败 | Implementation Drift、数据偏差 |
-| **AS-1** | AI安全 | **成功发表** | 数据偏差、上下文问题 |
+- **AS-1** | AI安全 | **成功发表** | 数据偏差、上下文问题 |
+
+## 2026-05-29 更新：陈德里综述
+
+DeepSeek 研究员陈德里（Deli Chen）发布 46 页综述论文 *From Copilots to Colleagues: A Survey of Autonomous Research Agents*，由 AI Agent 深度参与完成（1% 人类，99% AI）。核心贡献：
+
+- **L1-L5 自主等级分类**：L1 自动补全 → L5 自主设定研究议程，当前最强系统处于 L4
+- **四种架构模式**：单智能体循环、多智能体协作（MetaGPT 67%→100%）、层级编排（Claude Code）、工具增强执行（ChemCrow 30%→75%）
+- **六大未解难题**：认知循环陷阱、上下文窗口限制、新颖性评估、可重现性危机、安全伦理、成本可及性
+
+产出数据：6 轮迭代、108 轮 Agent 交互、64.8 万 tokens、6 天、95+ 篇参考文献、人类实际"动脑"时间不到 2 小时。
 
 ## 六大反复失败模式
 
@@ -58,3 +68,18 @@ Paper Outlining Agent → Revision Agent
 - [[openclaw]] — 多 Agent 协作流程的实践案例（Orchestration Agent）
 - [[ai-sycophancy-analysis]] — AI Safety 研究方向，AS-1 成功于此
 - [[ai-agent]] — 自主研究 Agent 的能力边界
+- [[muse-autoskill-agent]] — 字节跳动自进化 Agent 框架，Skill 全生命周期管理
+- [[codex-goal-mode-ai-science]] — Codex Goal Mode，1小时56分完成博士80小时任务
+
+## 2026-06-01 更新：AutoSci — 全流程科研 Agent 系统 (arXiv 2605.31468)
+
+北京大学发布 AutoSci，内存中心化科研 Agent 系统，四模块架构：
+
+- **SciMem**：结构化科研记忆，分层（长期知识库 vs 项目级活跃记忆）
+- **SciFlow**：Harness 驱动执行，5 阶段生命周期（文献→想法→实验→写作→反驳）
+- **SciDAG**：DAG 形多 Agent 算子，增强复杂推理阶段
+- **SciEvolve**：反馈驱动自我演化，修改自身 skills 和工作流
+
+**关键贡献：** 首次同时具备完整生命周期支持 + 执行 Harness + 结构化持久记忆 + 系统自演化。对比 AI Scientist 系列、Agent Laboratory、ARIS、NORA 等，均缺失至少一项。
+
+AutoSci → [[ai-scientists-autonomous-research]]，补充全流程 + 自演化能力这一环

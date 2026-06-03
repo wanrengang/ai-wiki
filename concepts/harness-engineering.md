@@ -60,11 +60,65 @@ PE（Prompt Engineering）→ CE（Context Engineering）→ HE（Harness Engine
 2. **AI 编程门槛进一步降低** - 中小商家也能获得专业级设计能力
 3. **技术落地关键** - 好的 AI 技术要实际落在业务场景中
 
+## 五子系统（Harness 核心架构）
+
+Harness 围绕智能体的一整套工程基础设施，由五个子系统组成，每一个对应一种具体失败模式：
+
+| 子系统 | 作用 | 解决什么问题 |
+|--------|------|-------------|
+| **指令子系统** | 仓库根目录 AGENTS.md/CLAUDE.md | 智能体不知道项目约定，瞎写代码 |
+| **工具子系统** | 环境权限、工具版本锁定 | 工具调用失败、环境不一致 |
+| **状态子系统** | PROGRESS.md 任务状态跟踪 | 执行过程不可追踪 |
+| **反馈子系统** | 测试循环、验证门禁 | 写完代码不知道对不对 |
+| **环境子系统** | Docker/setup.sh 环境隔离 | 环境差异导致执行失败 |
+
+## 核心实验证据
+
+### Anthropic 实验（9美元 vs 200美元）
+
+- 同一个 Opus 4.5 模型，同一道编程题
+- 裸跑：9美元，效果全废
+- 加 Harness：200美元，效果稳定交付
+- **多花的191美元，全花在验证循环上** — 每写一段代码就跑测试，不通过就改，直到真正通过
+
+### OpenAI Codex 实验（百万行仓库）
+
+- 同一个模型，同一个真实代码仓库
+- 实验只改了一件事：仓库根目录加了一个 AGENTS.md 文件（不到100行 markdown）
+- 结果：代码质量显著提升
+
+### 关键教训
+
+> 没有反馈循环，Harness 等于没装 — 这是 Anthropic 9美元实验的核心教训：前四步全做对，第五步（反馈子系统）缺位，依然全废。
+
+## 企业落地五步法
+
+```
+第1步·根目录建 AGENTS.md
+  → 至少三块：项目说明、禁止操作、完成定义
+第2步·配 permissions
+  → .claude/settings.json 或 ~/.codex/config.toml
+第3步·写 setup.sh 锁环境
+  → 所有版本写死，pnpm install --frozen-lockfile
+第4步·建 PROGRESS.md
+  → 已完成/进行中/待办/已知问题
+第5步·固化完成定义
+  → pnpm type check/test/lint/build，退出码不为0不算完成
+```
+
+## 关键洞察
+
+1. **开源模型也能稳定完成长程任务** - GLM-5.1 验证了 8 小时持续工作能力
+2. **AI 编程门槛进一步降低** - 中小商家也能获得专业级设计能力
+3. **技术落地关键** - 好的 AI 技术要实际落在业务场景中
+4. **先装 Harness，再等下一个模型** - 2026年 Anthropic 和 OpenAI 的两组实验给出同一个答案：别先换模型，先把 Harness 装好
+
 ## 相关链接
 
-- [[glmmodel-51]] - GLM-5.1 模型
+- [[agent-production-evaluation]] - Agent 生产评估三层次（上线前/运行中/事故后）
 - [[superpowers-claude-code]] - Claude Code 编程工作流
 - [[enterprise-skill-architecture]] - 企业级 Skill 体系
+- [[test-time-compute-scaling]] - 推理时计算扩展（对比参考）
 
 ## 标签
 

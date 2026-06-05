@@ -606,3 +606,18 @@
 - 跨链接：agent-production-evaluation → [[harness-engineering]], [[agent-drift-multi-agent-systems]], [[test-time-compute-scaling]], [[mcp]], [[superpowers]]
 - WeRSS 情况：最近公号文章最新日期 2026-05-24（9天前），多为新闻简讯；仅此2篇有技术深度入库
 - 总入库：2 raw + 1 新 concepts + 1 更新 concepts
+
+## [2026-06-05] ingest | earendil-works/pi 研究入库 + deepagents 补充完善
+
+- 来源：GitHub README（59K Stars），API 元数据，多包 package.json 依赖分析，PyPI 下载数据，Deep Agents Code 文档
+- **评估结果**：pi 是 TypeScript 领域最具代表性的开源 Coding Agent Harness，自研 harness 无框架依赖，supply-chain hardening 到位；deepagents 是 Python/LangChain 生态的 opinionated harness，PyPI 月下载 485 万，开箱即用
+- raw/articles/:
+  - 2026-06-05-earendil-pi-agent-harness.md（GitHub README，sha256: f5d9c7d7...）
+- entities/:
+  - entities/earendil-pi.md（新建，含包架构、设计决策、企业价值分析）
+  - entities/deepagents.md（补充完善，PyPI 下载数据、Deep Agents Code CLI 能力清单、LangChain 三层架构定位）
+- comparisons/:
+  - comparisons/earendil-pi-vs-deepagents.md（新建，pi vs Deep Agents 深度对比）
+- index.md：Entities (40→42)，Comparisons (1→2)
+- 跨链接：earendil-pi → [[deepagents]], [[ai-agent]], [[harness-engineering]]；deepagents → [[earendil-pi]], [[ai-agent]]；对比页 → [[earendil-pi]], [[deepagents]]
+- total: 1 raw + 1 new entity + 1 updated entity + 1 comparison

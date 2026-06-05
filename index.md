@@ -4,7 +4,7 @@
 > 查阅前先读此文件，快速定位相关页面。
 |> Last updated: 2026-06-03 | Total pages: 122
 
-## Entities (40)
+## Entities (42)
 - [[gram-generative-recursive-reasoning]] - GRAM：Yoshua Bengio 并行递归推理模型，16步+20并行 > 320步串行（arXiv 2605.19376）
 - [[supabase]] - Supabase：百亿美元估值 BaaS 平台，vibe coding 的默认后端，700万用户
 - [[vibe-trading]] - Vibe-Trading：HKUDS开源AI量化交易Agent平台，74 Skills + 29 Swarm Presets
@@ -14,6 +14,8 @@
 - [[notebooklm]] - Google NotebookLM：AI 知识管理工具，20 个黄金指令对抗幻觉
 - [[vercel-agent-browser]] - Vercel agent-browser：Rust 写的浏览器自动化 CLI，Token 消耗仅 Playwright 6%
 - [[claude-managed-agents]] - Claude Managed Agents：Anthropic 托管平台，重新定义 Agent 控制权
+- [[earendil-pi]] - earendil-works/pi: TypeScript 实现的开源 Coding Agent Harness, 59K Stars, 自研 pi-ai 多 Provider 统一接口 + 无框架依赖, supply-chain hardening 到位
+- [[deepagents]] - Deep Agents: LangChain 官方 "batteries-included" Agent Harness, 24K Stars, Python+JS 双版本, 8 大核心能力打包, LangGraph 底座 + LangSmith 可观测性, Deep Agents Code CLI 开箱即用, PyPI 月下载 485 万
 - [[dingtalk-wukong]] - 钉钉悟空：阿里企业级 AI 原生工作平台，C端千问 B端悟空
 - [[dingtalk-workspace-cli]] - 钉钉 dingtalk-workspace-cli：官方跨平台 CLI，支持群消息读取
 - [[hermes-agent]] - Hermes Agent：Nous Research 自我进化 Agent，41K Stars
@@ -126,8 +128,9 @@
 - [[swe-atlas]] - SWE Atlas：Scale AI编程基准，284道工程题评估代码理解/测试/重构，Pass@1最高43.49%但三次通过率骤降30-50%（arXiv 2605.08366）
 - [[amd-mxfp4-fp4-training]] - AMD MXFP4：原生 FP4 训练新纪元，Llama 3.1-8B 训练加速 9-10%（arXiv 2605.09825）
 
-## Comparisons (1)
+## Comparisons (2)
 
+- [[earendil-pi-vs-deepagents]] - pi vs Deep Agents: TypeScript 自底向上 vs Python/LangChain 生态借力，两条 Agent Harness 工程路线深度对比
 - [[dingtalk-wukong-vs-openclaw]] - 钉钉悟空 vs 龙虾：企业级 AI 选型深度测评
 
 ## Queries

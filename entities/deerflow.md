@@ -88,3 +88,10 @@ make docker-start   # 启动服务
 
 - GitHub: https://github.com/bytedance/deer-flow
 - 官网: https://deerflow.tech
+
+
+## 相关概念
+
+- [[ai-agent]] — AI Agent 通用概念
+- [[langchain]] — DeerFlow 的底层框架
+- [[openclaw]] — 另一个开源 Agent Harness 对比

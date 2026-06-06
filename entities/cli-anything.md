@@ -90,3 +90,10 @@ CLI-Anything 定位于**执行层**，与 Claude Dispatch 的**控制层**形成
 ## 相关链接
 
 - GitHub: https://github.com/HKUDS/CLI-Anything
+
+
+## 相关概念
+
+- [[ai-agent]] — AI Agent 通用概念
+- [[deerflow]] — 字节跳动 SuperAgent Harness
+- [[hermes-agent]] — Nous Research CLI Agent

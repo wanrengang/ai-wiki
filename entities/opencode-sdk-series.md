@@ -236,3 +236,10 @@ const session = await client.session.create({
 - OpenCode GitHub：https://github.com/anomalyco/opencode
 - OpenCode SDK 文档：https://opencode.ai/docs/sdk
 - MCP 协议：https://modelcontextprotocol.io/
+
+
+## 相关概念
+
+- [[opencode-platform]] — SDK 所属平台
+- [[ai-agent]] — AI Agent 通用概念
+- [[openclaw]] — 另一个开源 Agent 平台

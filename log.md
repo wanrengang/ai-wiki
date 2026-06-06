@@ -621,3 +621,39 @@
 - index.md：Entities (40→42)，Comparisons (1→2)
 - 跨链接：earendil-pi → [[deepagents]], [[ai-agent]], [[harness-engineering]]；deepagents → [[earendil-pi]], [[ai-agent]]；对比页 → [[earendil-pi]], [[deepagents]]
 - total: 1 raw + 1 new entity + 1 updated entity + 1 comparison
+
+## [2026-06-06] cleanup | 实体质量梳理与清理
+
+### 删除（无价值/重复）
+- entities/ds4c-deepseek-v4.md — 32行，ds4c.md 的重复碎片，旧版 frontmatter
+- entities/vibe-trading.md — 35行，sources 为空（https://github.com/），纯个人量化配置
+- entities/we-mp-rss.md — 公众号抓取工具，属个人工作流而非 AI 实体
+
+### 归档至 _archive/
+- ollama-local.md — 个人本地 Ollama 配置，无 sources
+- openclaw-local.md — 个人本地 OpenClaw 实例，无 sources
+- qwenpaw.md — 个人本地 QwenPaw 部署，无 sources
+- khalid-ignatov-timofte-nas.md — 三位研究者不够 notable，论文内容已被概念页覆盖
+- hyperframes.md — HeyGen 内部项目，关联度弱
+
+### Wikilink 修复（9个孤立实体补链）
+- clawemail → [[openclaw]], [[openclaw-ecosystem]], [[ai-agent]]
+- cli-anything → [[ai-agent]], [[deerflow]], [[hermes-agent]]
+- deerflow → [[ai-agent]], [[langchain]], [[openclaw]]
+- gamma → [[ai-agent]], [[supabase]]
+- github-mcp → [[openclaw]], [[ai-agent]], [[mcp]]
+- openclaw-ecosystem → [[openclaw]], [[hermes-agent]], [[ai-agent]]
+- openclaw-wechat-toolkit → [[openclaw]], [[openclaw-ecosystem]], [[ai-agent]]
+- opencode-sdk-series → [[opencode-platform]], [[ai-agent]], [[openclaw]]
+- ruflo → [[ai-agent]], [[deepagents]], [[earendil-pi]]
+
+### Frontmatter 修复（5个）
+- gbrain.md — 旧 schema（date/source/author/type:concept）→ 新 schema（created/updated/sources/confidence/type:entity）
+- gstack.md — 同上，旧 schema → 新 schema
+- aifut-conference.md — 补 confidence: medium，sources 路径标准化
+- dingtalk-wukong.md — 补 confidence: medium，sources 路径标准化
+- karpathy-2026-sequoia-ai-ascent.md — 补 confidence: medium
+
+### index.md 更新
+- Entities (42→46)，删除 3 条 + 修正计数
+- Archive 新增 5 条归档记录

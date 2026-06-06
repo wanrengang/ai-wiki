@@ -4,10 +4,9 @@
 > 查阅前先读此文件，快速定位相关页面。
 |> Last updated: 2026-06-03 | Total pages: 122
 
-## Entities (42)
+## Entities (46)
 - [[gram-generative-recursive-reasoning]] - GRAM：Yoshua Bengio 并行递归推理模型，16步+20并行 > 320步串行（arXiv 2605.19376）
 - [[supabase]] - Supabase：百亿美元估值 BaaS 平台，vibe coding 的默认后端，700万用户
-- [[vibe-trading]] - Vibe-Trading：HKUDS开源AI量化交易Agent平台，74 Skills + 29 Swarm Presets
 
 - [[aifut-conference]] - AIFUT 大会：北京亦庄 AI 盛会，1500+ 参会者，聚焦 Agent 与创业
 - [[glmmodel-51]] - 智谱 GLM-5.1：全球首个验证 8 小时持续工作能力的开源模型
@@ -53,8 +52,6 @@
 - [[github-mcp]] - GitHub MCP：AI 助手 GitHub 操作标准化接口
 - [[opencode-sdk-series]] - OpenCode SDK 技术博客系列：企业级 AI Agent 运行时框架
 - [[ds4c]] - ds4.c：Redis之父antirez打造的DeepSeek V4专用推理引擎，Metal-only
-- [[ds4c-deepseek-v4]] - ds4.c × DeepSeek V4：Redis之父专造V4推理引擎，Mac Metal跑Flash
-- [[khalid-ignatov-timofte-nas]] - Khalid/Ignatov/Timofte：维尔茨堡大学三人组，LLM自主设计神经网络架构论文作者
 
 ## Concepts (41)
 - [[agent-production-evaluation]] - Agent生产评估三层次：上线前行为测试、运行中链路观测、事故后组织指标（Harness.io/Galileo/Datadog三大报告）
@@ -138,3 +135,9 @@
 ## Archive
 - [[karpathy-2026-sequoia-ai-ascent]] — Karpathy 2026 红杉 AI Ascent 演讲：编程 AGI 拐点 (2026)
 - [[gbrain]] — YC CEO 的 AI Agent 知识脑：自织知识图谱 + 34 skills + OpenClaw/Hermes 原生集成
+
+- [[ollama-local]] — 个人本地 Ollama 配置（Mac M5 Pro）
+- [[openclaw-local]] — 个人本地 OpenClaw 实例
+- [[qwenpaw]] — AgentScope 团队 QwenPaw 本地部署
+- [[khalid-ignatov-timofte-nas]] — 三位研究者的 LLM NAS 论文（不够 notable）
+- [[hyperframes]] — HeyGen 视频 AI 项目（内部工具，关联度弱）

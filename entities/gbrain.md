@@ -1,11 +1,11 @@
 ---
 title: gbrain — AI Agent 知识脑
-date: 2026-05-03
-tags: [AI, knowledge-graph, agent, OpenClaw, Hermes, gbrain, RAG]
-source: https://github.com/garrytan/gbrain
-author: Garry Tan (Y Combinator CEO)
-type: concept
-aliases: [gbrain-ai-agent-brain, garry-tan-gbrain]
+created: 2026-05-03
+updated: 2026-05-03
+type: entity
+tags: [AI, knowledge-graph, agent, openclaw, hermes-agent, gbrain, rag]
+sources: [https://github.com/garrytan/gbrain]
+confidence: medium
 ---
 
 # gbrain

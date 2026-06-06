@@ -4,7 +4,8 @@ created: 2026-04-08
 updated: 2026-04-08
 type: entity
 tags: [conference, china, ai-event, agent, startup]
-sources: [/run/media/wrg/mywork/data/my-obsidian/02AI与技术/2026-04-08-AIFUT大会上午场干货总结.md]
+sources: [my-obsidian/02AI与技术/2026-04-08-AIFUT大会上午场干货总结.md]
+confidence: medium
 ---
 
 # AIFUT 大会

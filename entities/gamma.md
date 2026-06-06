@@ -60,3 +60,9 @@ Gamma 是一个 AI Native 演示文稿生成平台，让用户通过自然语言
 
 - 官网: https://gamma.app
 - GitHub (开源替代): https://github.com/allweone/presentation-ai
+
+
+## 相关概念
+
+- [[ai-agent]] — AI Agent 通用概念
+- [[supabase]] — Gamma 的可选后端

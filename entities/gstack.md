@@ -1,10 +1,11 @@
 ---
 title: GStack — YC CEO 的 AI 软件工厂
-date: 2026-05-09
+created: 2026-05-09
+updated: 2026-05-09
+type: entity
 tags: [AI, coding, YC, gstack, open-source, agent]
-category: entities
-source: 微信公众号
-url: https://mp.weixin.qq.com/s/tPCRmEWFler5C2vInggLeg
+sources: [https://mp.weixin.qq.com/s/tPCRmEWFler5C2vInggLeg]
+confidence: medium
 ---
 
 # GStack — YC CEO 的 AI 软件工厂

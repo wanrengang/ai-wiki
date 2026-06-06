@@ -4,7 +4,8 @@ created: 2026-04-10
 updated: 2026-04-10
 type: entity
 tags: [company, dingtalk, enterprise, ai, agent]
-sources: [/run/media/wrg/mywork/data/my-obsidian/02AI与技术/2026-04-10-钉钉悟空vs龙虾-企业级AI选型深度测评.md]
+sources: [my-obsidian/02AI与技术/2026-04-10-钉钉悟空vs龙虾-企业级AI选型深度测评.md]
+confidence: medium
 ---
 
 # 钉钉悟空

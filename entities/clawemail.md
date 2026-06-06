@@ -90,3 +90,10 @@ cp -r skills/cto1/clawemail ~/.openclaw/skills/
 - `clawemail + briefing` — 生成今日简报
 - `clawemail + google-calendar` — 日程+邮件联动
 - `clawemail + clickup-mcp` — 任务自动提取
+
+
+## 相关概念
+
+- [[openclaw]] — ClawEmail 的宿主平台
+- [[openclaw-ecosystem]] — OpenClaw 生态整体概览
+- [[ai-agent]] — AI Agent 通用概念

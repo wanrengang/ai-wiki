@@ -103,3 +103,10 @@ Anthropic 在 30 天内连发四功能对标 OpenClaw：
 - 文档: https://docs.openclaw.ai
 - ClawHub: https://clawhub.com
 - awesome-openclaw-skills: https://github.com/VoltAgent/awesome-openclaw-skills
+
+
+## 相关概念
+
+- [[openclaw]] — 生态系统核心项目
+- [[hermes-agent]] — 生态内另一重要 Agent
+- [[ai-agent]] — AI Agent 通用概念

@@ -130,3 +130,10 @@ claude mcp add ruflo -- npx ruflo@latest mcp start
 ## 标签
 
 #Ruflo #AgentOrchestration #ClaudeCode #MultiAgent #SwarmIntelligence #MCP #RAG #FederatedAI #SelfLearning
+
+
+## 相关概念
+
+- [[ai-agent]] — AI Agent 通用概念
+- [[deepagents]] — 另一个开源 Agent Harness
+- [[earendil-pi]] — TypeScript 版开源 Agent Harness

@@ -1,7 +1,7 @@
 ---
 title: OpenClaw 版本更新总结
 created: 2026-03-08
-updated: 2026-03-08
+updated: 2026-06-11
 type: concept
 tags: [openclaw, version, changelog, update, release]
 sources: [raw/articles/OpenClaw版本更新总结.md]
@@ -9,6 +9,51 @@ confidence: high
 ---
 
 # OpenClaw 版本更新总结
+
+> 当前版本：v2026.6.2-alpha.2（发布日期：2026-06-02）
+> 最后更新：2026-06-11
+
+## 最新动态 (2026-06)
+
+### Windows 原生集成 - MXC ⭐⭐⭐⭐⭐
+
+**Build 2026 宣布：** OpenClaw 原生内置 Windows，通过 MXC（Microsoft Execution Containers）实现 OS 级 Agent 沙箱
+
+**技术架构：**
+- MXC = Windows 原生的策略驱动执行层
+- 支持进程/会话隔离
+- 与 Entra/Defender/Intune/Purview 深度集成
+
+**部署路径：**
+- MXC 本地：OpenClaw Node + Gateway 在 Windows 上容器化运行
+- openclaw-dev 云端：Azure Container Apps 托管版
+
+**杀手级应用：** Microsoft Scout（基于 OpenClaw + WorkIQ 的个人 Agent）
+
+**生态伙伴：** NVIDIA OpenShell、OpenAI、Manus、Nous Research 均已接入 MXC
+
+### 支持的渠道（截至 2026-06）
+
+OpenClaw 支持的渠道包括：WhatsApp, Telegram, Slack, Discord, Google Chat, Signal, iMessage, IRC, Microsoft Teams, Matrix, Feishu, LINE, Mattermost, Nextcloud Talk, Nostr, Synology Chat, Tlon, Twitch, Zalo, Zalo Personal, **WeChat**, **QQ**, WebChat
+
+### OpenClaw 主仓库
+
+- GitHub: https://github.com/openclaw/openclaw
+- 官网: https://openclaw.ai
+- 文档: https://docs.openclaw.ai
+- Discord: https://discord.gg/clawd
+
+### Microsoft OpenClaw Dev (云端版)
+
+- GitHub: https://github.com/microsoft/openclaw-dev
+- 短链接: https://aka.ms/openclaw-dev
+- 状态: Alpha
+- 使用 Azure OpenAI (Foundry Models)，默认 gpt-5-mini
+- 用于：always-on、多设备、临时沙箱场景
+
+---
+
+## 历史版本 (2026.3.7)
 
 > 版本：2026.3.7 → 2026.3.8，发布日期：2026-03-08
 

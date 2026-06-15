@@ -2,19 +2,19 @@
 
 > 内容目录。所有 wiki 页面按类型分类，每页一行摘要。
 > 查阅前先读此文件，快速定位相关页面。
-|> Last updated: 2026-06-03 | Total pages: 122
+|> Last updated: 2026-06-15 | Total pages: 140
 
-## Entities (46)
+## Entities (42)
 - [[gram-generative-recursive-reasoning]] - GRAM：Yoshua Bengio 并行递归推理模型，16步+20并行 > 320步串行（arXiv 2605.19376）
 - [[supabase]] - Supabase：百亿美元估值 BaaS 平台，vibe coding 的默认后端，700万用户
+|- [[vibe-trading]] - Vibe-Trading：HKUDS开源AI量化交易Agent平台，74 Skills + 29 Swarm Presets
+|- [[applovin]] - AppLovin：790%涨幅背后 AI 广告机器，Axon LTV 模型驱动百亿广告预算（2024-2025）
 
-- [[aifut-conference]] - AIFUT 大会：北京亦庄 AI 盛会，1500+ 参会者，聚焦 Agent 与创业
+|- [[aifut-conference]] - AIFUT 大会：北京亦庄 AI 盛会，1500+ 参会者，聚焦 Agent 与创业
 - [[glmmodel-51]] - 智谱 GLM-5.1：全球首个验证 8 小时持续工作能力的开源模型
 - [[notebooklm]] - Google NotebookLM：AI 知识管理工具，20 个黄金指令对抗幻觉
 - [[vercel-agent-browser]] - Vercel agent-browser：Rust 写的浏览器自动化 CLI，Token 消耗仅 Playwright 6%
 - [[claude-managed-agents]] - Claude Managed Agents：Anthropic 托管平台，重新定义 Agent 控制权
-- [[earendil-pi]] - earendil-works/pi: TypeScript 实现的开源 Coding Agent Harness, 59K Stars, 自研 pi-ai 多 Provider 统一接口 + 无框架依赖, supply-chain hardening 到位
-- [[deepagents]] - Deep Agents: LangChain 官方 "batteries-included" Agent Harness, 24K Stars, Python+JS 双版本, 8 大核心能力打包, LangGraph 底座 + LangSmith 可观测性, Deep Agents Code CLI 开箱即用, PyPI 月下载 485 万
 - [[dingtalk-wukong]] - 钉钉悟空：阿里企业级 AI 原生工作平台，C端千问 B端悟空
 - [[dingtalk-workspace-cli]] - 钉钉 dingtalk-workspace-cli：官方跨平台 CLI，支持群消息读取
 - [[hermes-agent]] - Hermes Agent：Nous Research 自我进化 Agent，41K Stars
@@ -49,12 +49,15 @@
 - [[tracking-behavioral-trajectories-arxiv-2606.02536]] - Tracking Behavioral Trajectories：技能文件embedding空间trait向量量化Agent行为变化，91.2%准确率，Hermes部署案例（arXiv 2606.02536）
 - [[ruflo]] - Ruflo：Claude Code Agent编排平台，48K Stars，100+ Agents + Swarm联邦协作
 - [[openclaw-wechat-toolkit]] - OpenClaw 微信工具包：公众号搜索→下载→洗稿→发布全流程
+- [[Google_Gemma_4_12B_发布]] - Google Gemma 4 12B：110亿参数开源多模态模型，12B参数，256K上下文，无编码器统一架构，16GB VRAM本地运行，Apache 2.0许可
+- [[LLM_Wiki开源项目研究报告]] - LLM Wiki：10.4K Stars开源知识库项目，Karpathy方法论工程化实现，两步CoT摄入 + 4信号知识图谱 + Louvain社区发现，RAG→Wiki范式转变
 - [[github-mcp]] - GitHub MCP：AI 助手 GitHub 操作标准化接口
 - [[opencode-sdk-series]] - OpenCode SDK 技术博客系列：企业级 AI Agent 运行时框架
 - [[ds4c]] - ds4.c：Redis之父antirez打造的DeepSeek V4专用推理引擎，Metal-only
-
-## Concepts (41)
+- [[ds4c-deepseek-v4]] - ds4.c × DeepSeek V4：Redis之父专造V4推理引擎，Mac Metal跑Flash
+- [[khalid-ignatov-timofte-nas]] - Khalid/Ignatov/Timofte：维尔茨堡大学三人组，LLM自主设计神经网络架构论文作者
 - [[agent-production-evaluation]] - Agent生产评估三层次：上线前行为测试、运行中链路观测、事故后组织指标（Harness.io/Galileo/Datadog三大报告）
+- [[verkor-design-conductor]] - Design Conductor：全球首个AI完整跑通芯片设计全流程（需求→GDSII版图），Verkor公司（arXiv 2603.08716）
 - [[coda-gemm-epilogue-optimization]] - GEMM-Epilogue 重参数化：Transformer 非矩阵乘法操作融合优化，Claude Code 也能写光速内核（arXiv 2605.19269）
 - [[agent-drift-multi-agent-systems]] - Agent Drift：多智能体LLM系统长期运行行为退化，中位73次交互后开始，任务成功率下降42%（arXiv 2601.04170）
 - [[agentic-code-reasoning]] - Agentic Code Reasoning：Meta半形式化代码推理，Semi-formal Reasoning让LLM Agent像形式化验证一样做代码分析，Patch Equivalence准确率93%（Agent无需执行代码）
@@ -67,10 +70,10 @@
 - [[anthropic-claude-roadmap-2026]] - Anthropic Claude路线图：TAI研究院成立，3大下一代方向，多智能体协作
 - [[anthropic-roadmap-2027]] - Anthropic ASI路线图2027：无限记忆+多智能体，xAI解散GPU归入Anthropic
 - [[cvpr-2026-video-understanding]] - CVPR 2026：8B小模型反超GPT-5/Gemini，让AI像电影人一样"看"视频
+- [[ai-slop-crisis]] - AI Slop危机：Graphite研究，2024年11月AI生成内容首超人类，Merriam-Webster年度词汇，训练数据自我污染危机
 - [[ai-sycophancy-analysis]] - AI大模型「谄媚倾向」分析：ChatGPT「稳稳接住你」现象的三个原因
-- [[alignment-tampering-rlhf]] - Alignment Tampering（对齐篡改）：RLHF放大偏差的结构性漏洞，ICML 2026（arXiv 2605.27355）
-|- [[laser-implicit-reasoning]] - Laser（ACL 2026）：隐式视觉推理框架，Token 消耗降低 97%+，概率叠加替代显式思维链
-|- [[lcguard-kv-latent-communication]] - LCGuard：IBM多Agent KV潜在通信安全框架，对抗重建防御敏感信息泄露（arXiv 2605.22786）
+- [[ai-low-quality-pr-open-source]] - AI低质量PR：批量PR产业链拖垮开源社区，vLLM/cURL/Gentoo三方应对（2026-05-24机器之心）
+- [[lcguard-kv-latent-communication]] - LCGuard：IBM多Agent KV潜在通信安全框架，对抗重建防御敏感信息泄露（arXiv 2605.22786）
 - [[ai-scientists-autonomous-research]] - AI Scientists：四个自主研究尝试，仅一成功，失败主因是实现偏差
 - [[harness-engineering]] - Harness Engineering：PE→CE→HE 演进，约束越多 Agent 干得越好
 - [[enterprise-skill-architecture]] - 企业级 Skill 体系：从 SOP 到 AI 能力网络
@@ -108,9 +111,9 @@
 - [[bytedance-grn]] - ByteDance GRN：第三条视觉生成路线，迭代细化消除误差累积（超越DiT/MaskGIT）
 - [[apo-multi-teacher-mllm-alignment]] - APO（ICML 2026）：多教师蒸馏中将概念漂移转化为动态约束，7B超越GPT-5
 - [[lilian-weng-why-we-think]] - Lilian Weng Why We Think：LLM推理机制深度解析，Budget Forcing、自我纠错、自适应计算
-|- [[llmsurgeon-data-mixture-diagnosis]] - LLMSurgeon：诊断大模型数据配比，Data Mixture Surgery 逆问题框架，从模型输出反推预训练数据分布（arXiv 2605.30348v1）
+- [[llmsurgeon-data-mixture-diagnosis]] - LLMSurgeon：诊断大模型数据配比，Data Mixture Surgery 逆问题框架，从模型输出反推预训练数据分布（arXiv 2605.30348v1）
 - [[maple-sub-agent-architecture]] - MAPLE：记忆·学习·个性化三元分解，ALA 2026 论文，三个独立子代理替代单体架构
-|- [[muse-autoskill-agent]] - MUSE-Autoskill：字节跳动自进化 Agent 框架，Skill 全生命周期管理，SkillsBench 新 benchmark（arXiv 2605.27366）
+- [[muse-autoskill-agent]] - MUSE-Autoskill：字节跳动自进化 Agent 框架，Skill 全生命周期管理，SkillsBench 新 benchmark（arXiv 2605.27366）
 |- [[triattention-kv-compression]] - TriAttention：MIT/NVIDIA/浙大 KV 选择性压缩，10.7倍内存缩减 + 2.5倍吞吐
 - [[agent-behavioral-trajectory-tracking]] - Agent Behavioral Trajectory Tracking：Trait向量在embedding空间量化技能文件行为变化，91.2%准确率，Agent-to-Agent协议（arXiv 2606.02536）
 - [[i2b-lpo-rlvr-exploration]] - I²B-LPO：ACL 2026 阿里达摩院，RLVR高熵节点分支+信息瓶颈自奖励，AIME+5.3%
@@ -122,12 +125,23 @@
 - [[manyih]] - ManyIH：JHU多层指令层级基准，12层冲突下顶级模型准确率仅40%，风格合规是瓶颈
 - [[rsagent]] - RSAgent：多模态大模型多轮工具调用视觉分割，ReasonSeg gIoU 66.5%，超越 Seg-Zero-7B 9%（ICML 2026）
 - [[swarmharness]] - SwarmHarness：去中心化算力激励协议，DHT+Shapley值无需区块链，HarnessAPI 多节点扩展
-- [[swe-atlas]] - SWE Atlas：Scale AI编程基准，284道工程题评估代码理解/测试/重构，Pass@1最高43.49%但三次通过率骤降30-50%（arXiv 2605.08366）
+- [[autolab-long-horizon-agent-benchmark]] - AutoLab：超长时闭环优化Agent基准测试，claude-opus-4.6持续迭代坚持度是核心能力（arXiv 2606.05080）
 - [[amd-mxfp4-fp4-training]] - AMD MXFP4：原生 FP4 训练新纪元，Llama 3.1-8B 训练加速 9-10%（arXiv 2605.09825）
 
-## Comparisons (2)
+## Concepts
+|- [[projectmem]] - PROJECTMEM：本地优先事件溯源记忆层，Memory-as-Governance预动作判断门，14 MCP工具，207事件自研究（arXiv 2606.12329）
+|- [[agent-memory-systems-characterization]] - Agent Memory 表征研究：首个10系统系统级测试，揭示记忆范式成本非对称转移（arXiv 2606.06448，Stanford/Yasmine Omri）
+|- [[agents-k1]] - Agents-K1：上海AI实验室全链路知识编排Agent，2.46M论文→Scholar-KG，4B GRPO提取模型，Gemini-3 7.9%→24.6%（arXiv 2606.13669）
+|- [[eurekagent]] - EurekAgent：清华/智谱环境工程Agent，指标驱动自主科学发现，26圆填充 SOTA <$11（arXiv 2606.13662）
+|- [[hypertool]] - HyperTool：上交大工具增强Agent范式，代码块折叠多步工具调用为单次outer call，Qwen3-32B 15%→35%（arXiv 2606.13663）
+||- [[mlevolve-self-evolving-mle-agent]] - MLEvolve：自我演化 MLE Agent 框架，65.3% MLE-Bench 奖牌率 SOTA，Progressive MCGS + Retrospective Memory + 分层规划（arXiv 2606.06473）
+- [[siga-self-evolving-coding-agent-adapters]] - SIGA：UCSD自进化编码Agent适配器，36×加速科学模拟器配置，接地层四组件 + 自进化（arXiv 2606.09774）
+|- [[recursive-agent-harnesses]] - RAH：PwC递归Agent Harness模式，Harness递归=模型递归的企业级扩展，GPT-5 71%→81%（arXiv 2606.13643）
+|- [[vortex-sparse-attention]] - Vortex：CMU/Rice/NUS稀疏注意力Serving系统，vFlow编程模型+vTensor抽象，AI Agent自动生成算法达3.46×吞吐增益（arXiv 2606.06453）
+|- [[containment-gap-agentic-framework-security]] - The Containment Gap：三大框架（LangChain/AutoGPT/OpenAI SDK）零原生合规，记忆污染攻击88.9%目标错误拒绝率，<1ms确定性修复（arXiv 2606.12797）
 
-- [[earendil-pi-vs-deepagents]] - pi vs Deep Agents: TypeScript 自底向上 vs Python/LangChain 生态借力，两条 Agent Harness 工程路线深度对比
+## Comparisons (1)
+
 - [[dingtalk-wukong-vs-openclaw]] - 钉钉悟空 vs 龙虾：企业级 AI 选型深度测评
 
 ## Queries
@@ -135,9 +149,3 @@
 ## Archive
 - [[karpathy-2026-sequoia-ai-ascent]] — Karpathy 2026 红杉 AI Ascent 演讲：编程 AGI 拐点 (2026)
 - [[gbrain]] — YC CEO 的 AI Agent 知识脑：自织知识图谱 + 34 skills + OpenClaw/Hermes 原生集成
-
-- [[ollama-local]] — 个人本地 Ollama 配置（Mac M5 Pro）
-- [[openclaw-local]] — 个人本地 OpenClaw 实例
-- [[qwenpaw]] — AgentScope 团队 QwenPaw 本地部署
-- [[khalid-ignatov-timofte-nas]] — 三位研究者的 LLM NAS 论文（不够 notable）
-- [[hyperframes]] — HeyGen 视频 AI 项目（内部工具，关联度弱）

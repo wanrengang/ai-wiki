@@ -1,10 +1,10 @@
 ---
 title: Harness Engineering
 created: 2026-04-08
-updated: 2026-04-08
+updated: 2026-06-07
 type: concept
 tags: [agent, engineering, workflow, llm, prompt-engineering]
-sources: [/run/media/wrg/mywork/data/my-obsidian/02AI与技术/2026-04-08-GLM-51电商风格迁移项目实战-甲木.md]
+sources: [/run/media/wrg/mywork/data/my-obsidian/02AI与技术/2026-04-08-GLM-51电商风格迁移项目实战-甲木.md, raw/articles/2026-06-06-harness.md, raw/articles/2026-06-07-harness-engineering-ai-success-rate.md]
 ---
 
 # Harness Engineering
@@ -116,7 +116,6 @@ Harness 围绕智能体的一整套工程基础设施，由五个子系统组成
 ## 相关链接
 
 - [[agent-production-evaluation]] - Agent 生产评估三层次（上线前/运行中/事故后）
-- [[superpowers-claude-code]] - Claude Code 编程工作流
 - [[enterprise-skill-architecture]] - 企业级 Skill 体系
 - [[test-time-compute-scaling]] - 推理时计算扩展（对比参考）
 

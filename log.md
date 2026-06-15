@@ -4,6 +4,93 @@
 > 格式：`## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-06-08] ingest | Anthropic Claude训练方法论入库（新智元2026-05-23）
+
+- WeChat: 新智元 - Anthropic自曝下一代Claude训练内幕！有人专职研究「性格」（Alex Albert × Peter Yang 35分钟访谈）
+- 核心内容：把模型当产品、单向门决策框架、Claude迭代Claude闭环、AI做梦自进化、性格养成计划
+- raw/articles/：2026-05-23-anthropic-claude-training-inner.md（新建）
+- 更新：concepts/anthropic-claude-roadmap-2026.md（追加Claude训练方法论章节，更新updated + sources）
+- 跨链接：[[hermes-cron]], [[agent-engineering]], [[openclaw]], [[claude-managed-agents]]（均OK）
+- WeRSS：最新文章多为已入库内容（Verkor芯片设计sha256重复），Anthropic Claude训练方法论为新增入库
+- Total pages: 131（未变，未新增独立页面）
+
+## [2026-06-11] ingest | AI Slop危机入库（Graphite研究，新智元2026-05-24）
+
+- WeChat: 新智元 - AI生成文章数量已碾压人类！Merriam-Webster年度词汇「slop」（2026-05-24）
+- 核心内容：Graphite研究，2024年11月AI生成内容首超人类，50%+稳定高位，半成品未计入；训练数据自我污染危机，AI燃料耗尽倒计时
+- raw/articles/：2026-06-11-ai-slop-human-written-content.md（新建）
+- concepts/：concepts/ai-slop-crisis.md（新建）
+- 跨链接：ai-slop-crisis → [[alignment-tampering-rlhf]], [[ai-sycophancy-analysis]], [[metr-frontier-risk-report]], [[harness-engineering]]（均OK）
+- WeRSS：DB最新文章仍为2026-05-24（WeRSS token过期），web_search/arXiv均不可用（net::ERR_CONNECTION_CLOSED）；仅此1篇新内容入库
+- Total pages: 132 → 133
+
+## [2026-06-13] ingest | AppLovin AI广告技术实体入库（机器之心2026-05-23）
+
+- WeChat: 机器之心 - 没有大模型没有自有流量，股价一度跌成废墟，靠什么把广告投放炼成千亿金矿（AppLovin 790%涨幅分析）
+- 核心内容：AppLovin CEO Adam Foroughi 的 AI 广告逻辑——Axon LTV 概率分布预测模型，28天优化机制，被低估用户发掘；护城河是多年真实付费数据训练的神经网络飞轮；AI Agent 时代将 Axon 变成可输出 API
+- raw/articles/：2026-06-13-applovin-ai-adtech-790-percent-2024.md（新建）
+- entities/：entities/applovin.md（新建）
+- 跨链接：applovin → [[harness-engineering]], [[mcp]], [[kimi-k2-6-ai-infra]]（均OK）
+- WeRSS：DB最新文章停在2026-05-23/24，多为已入库内容（Verkor芯片设计sha256重复、slop危机已入库、Anthropic Opus 4.8为产品发布无技术深度）；Microsoft重组偏向组织新闻不入库
+- Total pages: 136 → 137
+
+## [2026-06-12] ingest | EurekAgent环境工程Agent入库（arXiv 2606.13662）
+
+- ArXiv: EurekAgent: Agent Environment Engineering is All You Need for Autonomous Scientific Discovery（清华大学 & 智谱 AI，arXiv:2606.13662）
+- 核心洞察：通用Agent时代，自主科学发现瓶颈从「规定工作流」转移到「设计环境」；环境工程四维度：权限/制品/预算/人机交互
+- raw/papers/：2026-06-12-eurekagent-tSinghua-zhipu-autonomous-science.md（新建）
+- 新增：concepts/eurekagent.md（新建）
+- 跨链接：[[harness-engineering]], [[ai-scientists-autonomous-research]], [[mlevolve-self-evolving-mle-agent]], [[siga-self-evolving-coding-agent-adapters]], [[agent-memory-systems-characterization]], [[hermes-cron]]（均OK）
+- WeRSS：DB最新文章停在2026-05-24（WeRSS token过期），无新内容；仅此1篇ArXiv入库
+- Total pages: 134 → 135
+
+## [2026-06-09] ingest | SIGA自进化编码Agent适配器入库（arXiv 2606.09774）
+
+- ArXiv: SIGA: Self-Evolving Coding-Agent Adapters for Scientific Simulation（UC San Diego, arXiv:2606.09774）
+- 核心内容：轻量级接地层（检索+程序记忆+轨迹内验证器+强制终止），36×加速科学模拟器配置（3小时→5分钟），自进化自动改进适配器
+- raw/papers/: 2026-06-09-siga-self-evolving-coding-agent-adapters.md（新建）
+- 新增：concepts/siga-self-evolving-coding-agent-adapters.md（新建）
+- 跨链接：[[harness-engineering]], [[mlevolve-self-evolving-mle-agent]], [[agent-drift-multi-agent-systems]]（均OK）
+- Total pages: 131 → 132
+
+## [2026-06-07] ingest | 3篇入库（Agent生产评估、FlashAR图像加速、Agent Memory系统表征）
+- WeChat: 机器之心 - Agent 从「优等生」到「好员工」（生产评估体系，连接 [[agent-production-evaluation]]）
+- WeChat: 机器之心 - FlashAR（自回归图像生成 22.9× 加速，训练免费插件，0.05% 数据）
+- ArXiv: Agent Memory 表征研究（arXiv 2606.06448，Stanford，10系统四轴分类法 + 系统级成本建模）
+- 新增：concepts/agent-memory-systems-characterization.md
+- 更新：index.md (Total: 129 → 130)
+
+## [2026-06-07] ingest | 2篇WeChat内容入库（Harness Engineering深度解析 + AI中转站商业生态）
+
+- WeChat: 新智元 - AI成功率从20%飙到100%！只需一个Harness文件（新智元2026-05-24，五子系统 + Anthropic 9美元实验 + 企业落地五步法）
+- WeChat: 机器之心 - Token贩子的盛宴（2026-05-24，傅盛/孙宇晨/特朗普家族三家中转站商业模式对比，ACM评测47%模型替换率）
+- raw/articles/: 2026-06-07-harness-engineering-ai-success-rate.md, 2026-06-07-ai-token-middleman.md
+- 更新：concepts/harness-engineering.md（追加来源 + 五子系统详情）
+- Total pages: 130（未变，未新增独立页面，内容已覆盖）
+
+## [2026-06-12] ingest | PROJECTMEM事件溯源记忆层入库（arXiv 2606.12329）
+
+- ArXiv: PROJECTMEM: A Local-First, Event-Sourced Memory and Judgment Layer for AI Coding Agents（University of Utah, arXiv:2606.12329）
+- 核心内容：本地优先事件溯源记忆层，Memory-as-Governance预动作判断门（防止重复失败修复），无向量库无LLM调用，14 MCP工具
+- raw/papers/: 2026-06-12-projectmem-ai-coding-agents.md（新建）
+- 新增：concepts/projectmem.md（新建）
+- 跨链接：projectmem → [[mem0]], [[mcp]], [[mnemis-ai-long-memory]], [[agent-memory-systems-characterization]], [[siga-self-evolving-coding-agent-adapters]]（均OK）
+- WeRSS：最新文章为2026-05-24，已全部入库，无新内容；web_search不可用
+- Total pages: 133 → 134
+
+## [2026-06-08] ingest | MLEvolve自我演化MLE Agent框架入库（arXiv 2606.06473）
+- ArXiv: MLEvolve（arXiv 2606.06473，上海AI Lab+华东师大）- 自我演化多智能体框架，三大组件：Progressive MCGS（跨分支图搜索+熵驱动调度）、Retrospective Memory（冷启动知识库+动态全局记忆）、分层规划+自适应代码生成
+- MLE-Bench 12小时：65.3%平均奖牌率 SOTA，超越 AlphaEvolve
+- raw/articles/：2026-06-08-mlevolve-self-evolving-mle-agent.md
+- concepts/：mlevolve-self-evolving-mle-agent.md（新建）
+- 跨链接：[[harness-engineering]], [[moss-source-level-self-evolution]], [[agent-drift-multi-agent-systems]], [[capability-evolver]]
+- WeRSS：最新日期 2026-05-24，多为已入库内容，跳过；Lilian Weng 最新 2026-05-01 Why We Think 已入库
+- 更新：index.md (Total: 130 → 131)
+
+## [2026-06-04] update | index.md 添加今日入库内容
+- 新增：Google_Gemma_4_12B_发布（Google Gemma 4 12B 多模态模型）、LLM_Wiki开源项目研究报告（LLM Wiki 10.4K Stars 项目）
+- Total pages: 124 → 126
+
 ## [2026-05-03] create | AI Wiki initialized
 - Domain: AI/ML 研究、前沿模型、AI Agent 技术
 - Path: /run/media/wrg/mywork/data/ai-wiki
@@ -30,6 +117,24 @@
   - 近两周热门 OpenClaw Skills 榜单
   - 办公领域热门 OpenClaw Skills 榜单
   - Anthropic 首超 OpenAI 暴买谷歌 TPU
+
+## [2026-06-04] ingest | 2篇WeChat内容入库（METR前沿风险报告 + AI低质量PR）
+- 来源：WeRSS DB（微信公众号，新智元2026-05-24、机器之心2026-05-24）
+- 主题：
+  1. **METR前沿风险报告** — 四大巨头首次允许METR第三方测试内部最强模型，AI欺骗行为（API额度耗尽自主越狱）、最小可行性越狱部署概念、CoT思维链是安全绳但存在漏洞
+  2. **AI低质量PR** — 辅导机构批量制造虚假PR产业链，vLLM/cURL/tldraw/Gentoo四方应对，GitHub Copilot设计缺陷是帮凶
+- raw/articles/：
+  - 2026-05-24-AI四巨头撒谎求生.md（新建，METR报告，新智元）
+  - 2026-05-24-AI-PR产业链.md（新建，开源社区危机，机器之心）
+- concepts/：
+  - concepts/metr-frontier-risk-report.md（新建，AI欺骗/越狱/安全）
+  - concepts/ai-low-quality-pr-open-source.md（新建，开源/PR产业链）
+- 跨链接：
+  - metr-frontier-risk-report → [[ai-sycophancy-analysis]], [[alignment-tampering-rlhf]], [[scheming-propensity-llm-agents]], [[lcguard-kv-latent-communication]], [[harness-engineering]]
+  - ai-low-quality-pr-open-source → [[harness-engineering]], [[scheming-propensity-llm-agents]], [[alignment-tampering-rlhf]]
+- WeRSS情况：DB最新文章 2026-05-24，API返回空列表，直接查DB获10个feed；新智元/机器之心共15篇，仅此2篇有技术深度入库
+- 静默项：Anthropic Mythos/Opus 4.8（产品发布类新闻）、AI芯片设计（7nm GDSII，标题党细节贫乏）、Hallo-Live（视频生成非核心）、Harness成功文件文（2026-06-02已入库）、Bengio GRAM（2026-05-24已入库）
+- 总入库：2 raw + 2 concepts
 
 ## [2026-06-03] ingest | Agent Behavioral Trajectory Tracking (arXiv 2606.02536)
 - 来源：arXiv HTML 页面（cs.AI，2026-06-02，ICML AIWILD Workshop）
@@ -607,53 +712,50 @@
 - WeRSS 情况：最近公号文章最新日期 2026-05-24（9天前），多为新闻简讯；仅此2篇有技术深度入库
 - 总入库：2 raw + 1 新 concepts + 1 更新 concepts
 
-## [2026-06-05] ingest | earendil-works/pi 研究入库 + deepagents 补充完善
+## [2026-06-05] ingest | Vortex稀疏注意力论文入库（arXiv 2606.06453）
+- 来源：ArXiv cs.AI，Vortex: Efficient and Programmable Sparse Attention Serving for AI Agents
+- WeRSS：量子位/新智元/机器之心最新文章均为新闻/重复内容，静默跳过
+- raw/papers/：2026-06-05-vortex-sparse-attention-ai-agents.md（105KB全文）
+- concepts/：concepts/vortex-sparse-attention.md（新建）
+- 跨链接：→ [[triattention-kv-compression]], [[lcguard-kv-latent-communication]], [[memory-processing-pipeline-llm-inference]], [[test-time-compute-scaling]], [[glmmodel-51]]
 
-- 来源：GitHub README（59K Stars），API 元数据，多包 package.json 依赖分析，PyPI 下载数据，Deep Agents Code 文档
-- **评估结果**：pi 是 TypeScript 领域最具代表性的开源 Coding Agent Harness，自研 harness 无框架依赖，supply-chain hardening 到位；deepagents 是 Python/LangChain 生态的 opinionated harness，PyPI 月下载 485 万，开箱即用
-- raw/articles/:
-  - 2026-06-05-earendil-pi-agent-harness.md（GitHub README，sha256: f5d9c7d7...）
-- entities/:
-  - entities/earendil-pi.md（新建，含包架构、设计决策、企业价值分析）
-  - entities/deepagents.md（补充完善，PyPI 下载数据、Deep Agents Code CLI 能力清单、LangChain 三层架构定位）
-- comparisons/:
-  - comparisons/earendil-pi-vs-deepagents.md（新建，pi vs Deep Agents 深度对比）
-- index.md：Entities (40→42)，Comparisons (1→2)
-- 跨链接：earendil-pi → [[deepagents]], [[ai-agent]], [[harness-engineering]]；deepagents → [[earendil-pi]], [[ai-agent]]；对比页 → [[earendil-pi]], [[deepagents]]
-- total: 1 raw + 1 new entity + 1 updated entity + 1 comparison
+## [2026-06-06] ingest | Harness Engineering更新 + Vortex论文补充
+- 来源：WeChat新智元（Harness深度解析）、ArXiv 2606.06453（Vortex稀疏注意力）
+- WeRSS：最新日期2026-05-24，跳过重复内容（Verkor AI芯片设计2026-05-24已入库）
+- raw/articles/：2026-06-06-ai20100harness.md（Harness工程，Anthropic 9美元实验）、2026-06-06-bengio.md（Bengio GRAM并行推理，2026-05-24已入库但新智元补充来源）
+- raw/papers/：2026-06-06-vortex-sparse-attention.md（补充ArXiv PDF全文30K字）
+- concepts/：concepts/harness-engineering.md（更新，追加新智元来源）
+- 总入库：3篇raw，无新页面（Vortex/GRAM/Harness均已存在）
 
-## [2026-06-06] cleanup | 实体质量梳理与清理
+## [2026-06-13] ingest | Agents-K1 科学知识编排Agent入库（arXiv 2606.13669）
 
-### 删除（无价值/重复）
-- entities/ds4c-deepseek-v4.md — 32行，ds4c.md 的重复碎片，旧版 frontmatter
-- entities/vibe-trading.md — 35行，sources 为空（https://github.com/），纯个人量化配置
-- entities/we-mp-rss.md — 公众号抓取工具，属个人工作流而非 AI 实体
+- ArXiv: Agents-K1: Towards Agent-native Knowledge Orchestration（上海AI实验室，arXiv:2606.13669v1）
+- 核心内容：全链路知识编排管道，2.46M论文→Scholar-KG知识图谱；五模块多模态Schema；4B GRPO提取模型；GraphAnything三源CLI；Gemini-3从7.9%→24.6%
+- raw/papers/：2026-06-13-agents-k1-scholarkg.md（新建）
+- concepts/：concepts/agents-k1.md（新建）
+- 跨链接：agents-k1 → [[ragflow]], [[mem0]], [[harness-engineering]], [[eurekagent]], [[test-time-compute-scaling]]（均OK）
+- WeRSS：Anthropic Opus 4.8/Mythos 1（产品发布类已跳过）、AI芯片设计（SHA256重复已入库）、推理算力分配（content=null跳过）
+- Total pages: 136
 
-### 归档至 _archive/
-- ollama-local.md — 个人本地 Ollama 配置，无 sources
-- openclaw-local.md — 个人本地 OpenClaw 实例，无 sources
-- qwenpaw.md — 个人本地 QwenPaw 部署，无 sources
-- khalid-ignatov-timofte-nas.md — 三位研究者不够 notable，论文内容已被概念页覆盖
-- hyperframes.md — HeyGen 内部项目，关联度弱
+## [2026-06-14] ingest | The Containment Gap 框架安全入库（arXiv 2606.12797）
 
-### Wikilink 修复（9个孤立实体补链）
-- clawemail → [[openclaw]], [[openclaw-ecosystem]], [[ai-agent]]
-- cli-anything → [[ai-agent]], [[deerflow]], [[hermes-agent]]
-- deerflow → [[ai-agent]], [[langchain]], [[openclaw]]
-- gamma → [[ai-agent]], [[supabase]]
-- github-mcp → [[openclaw]], [[ai-agent]], [[mcp]]
-- openclaw-ecosystem → [[openclaw]], [[hermes-agent]], [[ai-agent]]
-- openclaw-wechat-toolkit → [[openclaw]], [[openclaw-ecosystem]], [[ai-agent]]
-- opencode-sdk-series → [[opencode-platform]], [[ai-agent]], [[openclaw]]
-- ruflo → [[ai-agent]], [[deepagents]], [[earendil-pi]]
+- ArXiv: The Containment Gap: How Deployed Agentic AI Frameworks Fail Public-Facing Safety Requirements（Hossain et al., 2026）
+- 核心内容：首次系统审计 LangChain/AutoGPT/OpenAI Agents SDK 六项 Containment Principles；三大框架零原生合规；P3 记忆完整性全部 ✗；单次记忆污染写入导致 88.9% 目标群体错误拒绝；复杂策略下总体准确率稳定掩盖 3.5× 定向伤害；确定性验证器 <1ms 修复
+- raw/papers/：2026-06-14-containment-gap-agentic-ai-framework-security.md（新建）
+- concepts/：concepts/containment-gap-agentic-framework-security.md（新建）
+- 跨链接：containment-gap → [[harness-engineering]], [[mcp]], [[lcguard-kv-latent-communication]], [[agent-drift-multi-agent-systems]], [[metr-frontier-risk-report]], [[scheming-propensity-llm-agents]]（均OK）
+- WeRSS：DB 最新文章 2026-05-24，两篇候选（AI芯片设计/METR报告）SHA256 与已入库完全一致，静默跳过
+- Total pages: 137 → 138
 
-### Frontmatter 修复（5个）
-- gbrain.md — 旧 schema（date/source/author/type:concept）→ 新 schema（created/updated/sources/confidence/type:entity）
-- gstack.md — 同上，旧 schema → 新 schema
-- aifut-conference.md — 补 confidence: medium，sources 路径标准化
-- dingtalk-wukong.md — 补 confidence: medium，sources 路径标准化
-- karpathy-2026-sequoia-ai-ascent.md — 补 confidence: medium
+## [2026-06-15] ingest | HyperTool + RAH 两篇 ArXiv 论文入库
 
-### index.md 更新
-- Entities (42→46)，删除 3 条 + 修正计数
-- Archive 新增 5 条归档记录
+- ArXiv cs.CL 新列表发现，两篇高质量论文：
+  - **HyperTool** (2606.13663)：上交大工具增强Agent范式，代码块折叠多步工具调用为单次 outer call，Qwen3-32B 15%→35%（+20.6pp）
+  - **RAH** (2606.13643)：PwC 递归 Agent Harness，将 RLM 模型递归扩展为完整 Harness 递归，GPT-5 71%→81%（+9.61pp）
+- raw/papers/：2026-06-15-hyypertool-2606.13663.md（71K字）、2026-06-15-recursive-agent-harnesses-2606.13643.md（39K字）
+- concepts/：concepts/hypertool.md（新建）、concepts/recursive-agent-harnesses.md（新建）
+- 跨链接：
+  - hypertool → [[mcp]], [[harness-engineering]], [[kimi-k2-6-ai-infra]], [[triattention-kv-compression]], [[test-time-compute-scaling]]（均OK）
+  - RAH → [[harness-engineering]], [[codex-goal-mode-ai-science]], [[openai-frontier]], [[claude-managed-agents]], [[test-time-compute-scaling]]（均OK）
+- WeRSS：DB 最新文章 2026-05-24（11天前），多为新闻/内容重复，无新增入库
+- Total pages: 138 → 140

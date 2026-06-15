@@ -66,3 +66,5 @@ Harness.io 的报告给出了三点结论：
 - [[test-time-compute-scaling]] — 推理时计算扩展
 - [[mcp]] — 模型上下文协议
 - [[superpowers]] — AI 编程增强系统
+- [[verkor-design-conductor]] — Design Conductor 是首个将 Agent 投入完整芯片生产流程的案例
+- [[autolab-long-horizon-agent-benchmark]] — AutoLab 揭示持续迭代坚持度比首次尝试质量更能预测最终性能

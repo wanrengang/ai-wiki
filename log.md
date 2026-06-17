@@ -759,3 +759,43 @@
   - RAH → [[harness-engineering]], [[codex-goal-mode-ai-science]], [[openai-frontier]], [[claude-managed-agents]], [[test-time-compute-scaling]]（均OK）
 - WeRSS：DB 最新文章 2026-05-24（11天前），多为新闻/内容重复，无新增入库
 - Total pages: 138 → 140
+
+## [2026-06-17] query | Whisper
+- check-coverage 结果: 未覆盖(关键词"Whisper" 0 命中)
+- 决策: create
+
+## [2026-06-17] ingest | whisper-deep-research
+- 路径: raw/articles/2026-06-17-whisper-deep-research.md
+- 来源: https://github.com/openai/whisper
+- sha256: fc3fd13605cc287bcdfb80a80f973b21735d8e1d9220ea8665cf84155f5cd2aa
+- 主题: OpenAI Whisper 项目深度调研(本地镜像 + 论文 + README)
+- 处理: 原始报告入库 raw/articles/
+
+## [2026-06-17] create | whisper
+- 路径: entities/whisper.md
+- 类型: entity
+- 主题: OpenAI Whisper 通用语音识别模型
+- 关键事实: 30s/16kHz 窗口 + Encoder-Decoder Transformer,6 档 13 权重,turbo 8x 速度,MIT,99 语种,68 万小时训练数据
+- 来源: raw/articles/2026-06-17-whisper-deep-research.md
+- 跨链接: [[openai-deployment-company-2026-05-15]]、[[openai-frontier]]
+- index.md: Entities 42 → 43,Total 140 → 142
+
+## [2026-06-17] query | Anthropic 产品矩阵
+- check-coverage 结果: 高覆盖(84 页命中,top 21 在 concepts/Claude/claude永久大脑深度研究报告.md)
+- 决策: 用户裁决 — 新建独立全景页,不 update 现有碎片页
+
+## [2026-06-17] ingest | anthropic-product-lineup
+- 路径: raw/articles/2026-06-17-anthropic-product-lineup.md
+- 来源: https://www.anthropic.com/product
+- sha256: 91dffc886dc49cb36e638e84e30a2c76f76645dd21ebd084cced68d7212f4186
+- 主题: Anthropic 2026-06 官网产品矩阵全景调研(12+ 款产品,4 层金字塔)
+- 处理: 原始报告入库 raw/articles/
+
+## [2026-06-17] create | anthropic-product-lineup
+- 路径: concepts/anthropic-product-lineup.md
+- 类型: summary
+- 主题: Anthropic 全产品矩阵 4 层金字塔(模型/接口/Agent/企业+集成)
+- 关键事实: 12+ 款产品,Opus 4.8/Sonnet 4.6/Haiku 4.5,Stripe 1370 人级 Claude Code 部署
+- 来源: raw/articles/2026-06-17-anthropic-product-lineup.md
+- 跨链接: [[claude永久大脑深度研究报告]]、[[claude-managed-agents]]、[[anthropic-claude-roadmap-2026]]、[[anthropic-roadmap-2027]]
+- index.md: Total 140 → 142

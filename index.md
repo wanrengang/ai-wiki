@@ -2,9 +2,9 @@
 
 > 内容目录。所有 wiki 页面按类型分类，每页一行摘要。
 > 查阅前先读此文件，快速定位相关页面。
-|> Last updated: 2026-06-15 | Total pages: 140
+|> Last updated: 2026-06-17 | Total pages: 142
 
-## Entities (42)
+## Entities (43)
 - [[gram-generative-recursive-reasoning]] - GRAM：Yoshua Bengio 并行递归推理模型，16步+20并行 > 320步串行（arXiv 2605.19376）
 - [[supabase]] - Supabase：百亿美元估值 BaaS 平台，vibe coding 的默认后端，700万用户
 |- [[vibe-trading]] - Vibe-Trading：HKUDS开源AI量化交易Agent平台，74 Skills + 29 Swarm Presets
@@ -56,6 +56,7 @@
 - [[ds4c]] - ds4.c：Redis之父antirez打造的DeepSeek V4专用推理引擎，Metal-only
 - [[ds4c-deepseek-v4]] - ds4.c × DeepSeek V4：Redis之父专造V4推理引擎，Mac Metal跑Flash
 - [[khalid-ignatov-timofte-nas]] - Khalid/Ignatov/Timofte：维尔茨堡大学三人组，LLM自主设计神经网络架构论文作者
+- [[whisper]] - Whisper：OpenAI 通用语音识别模型，30s/16kHz 窗口 + Encoder-Decoder + 多任务统一架构，6 档 13 权重，turbo 8x 速度
 - [[agent-production-evaluation]] - Agent生产评估三层次：上线前行为测试、运行中链路观测、事故后组织指标（Harness.io/Galileo/Datadog三大报告）
 - [[verkor-design-conductor]] - Design Conductor：全球首个AI完整跑通芯片设计全流程（需求→GDSII版图），Verkor公司（arXiv 2603.08716）
 - [[coda-gemm-epilogue-optimization]] - GEMM-Epilogue 重参数化：Transformer 非矩阵乘法操作融合优化，Claude Code 也能写光速内核（arXiv 2605.19269）
@@ -129,6 +130,7 @@
 - [[amd-mxfp4-fp4-training]] - AMD MXFP4：原生 FP4 训练新纪元，Llama 3.1-8B 训练加速 9-10%（arXiv 2605.09825）
 
 ## Concepts
+- [[anthropic-product-lineup]] - Anthropic 产品矩阵全景：4 层金字塔(模型/接口/Agent/企业+集成),12+ 款产品,核心战略"AI for Problem Solvers"
 |- [[projectmem]] - PROJECTMEM：本地优先事件溯源记忆层，Memory-as-Governance预动作判断门，14 MCP工具，207事件自研究（arXiv 2606.12329）
 |- [[agent-memory-systems-characterization]] - Agent Memory 表征研究：首个10系统系统级测试，揭示记忆范式成本非对称转移（arXiv 2606.06448，Stanford/Yasmine Omri）
 |- [[agents-k1]] - Agents-K1：上海AI实验室全链路知识编排Agent，2.46M论文→Scholar-KG，4B GRPO提取模型，Gemini-3 7.9%→24.6%（arXiv 2606.13669）

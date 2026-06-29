@@ -1,10 +1,10 @@
 ---
 title: Harness Engineering
 created: 2026-04-08
-updated: 2026-06-07
+updated: 2026-06-26
 type: concept
 tags: [agent, engineering, workflow, llm, prompt-engineering]
-sources: [/run/media/wrg/mywork/data/my-obsidian/02AI与技术/2026-04-08-GLM-51电商风格迁移项目实战-甲木.md, raw/articles/2026-06-06-harness.md, raw/articles/2026-06-07-harness-engineering-ai-success-rate.md]
+sources: [/run/media/wrg/mywork/data/my-obsidian/02AI与技术/2026-04-08-GLM-51电商风格迁移项目实战-甲木.md, raw/articles/2026-06-06-harness.md, raw/articles/2026-06-07-harness-engineering-ai-success-rate.md, raw/papers/2026-06-26-harness-design-post-training-2606.25447.md]
 ---
 
 # Harness Engineering
@@ -113,11 +113,40 @@ Harness 围绕智能体的一整套工程基础设施，由五个子系统组成
 3. **技术落地关键** - 好的 AI 技术要实际落在业务场景中
 4. **先装 Harness，再等下一个模型** - 2026年 Anthropic 和 OpenAI 的两组实验给出同一个答案：别先换模型，先把 Harness 装好
 
+## 新发现：Harness 与 Post-Training 的交互（2026-06-26）
+
+来自 arXiv:2606.25447 的最新研究揭示了一个此前被忽视的关键维度：**Harness 设计与 Post-Training 算法之间存在深度交互**。
+
+### 核心洞察
+
+现有 Post-training 算法（包括 RL）假设环境是静态的，但现实中：
+- **工具环境会漂移** — API 文档过时、字段重命名、服务变化
+- **任务会变化** — 部署时面临与训练时不同的工具集
+
+实验表明：**Harness-aware Post-training**（考虑 harness 设计的 Post-training）不仅提升分布内性能，还使 Agent 能鲁棒地适应分布外（OOD）设置。
+
+### Harness 的作用维度
+
+| 维度 | 说明 |
+|------|------|
+| 暴露哪些工具 | 工具选择影响策略学习 |
+| 如何描述工具 | 工具描述方式影响调用准确性 |
+| 每步观测附带什么信息 | 辅助信息的呈现方式对成功率影响极大 |
+
+> **相同任务、相同模型，两个只在辅助信息呈现方式上不同的 harness，可以产生截然不同的成功率。** 这印证了 Harness Engineering 的核心前提。
+
+### 与本文的关系
+
+本文的 five-subsystem harness 框架为"什么样的 harness 设计是好的"提供了工程实践基础；arXiv:2606.25447 从 Post-training 算法角度证明了 harness 设计不是可选的工程细节，而是决定训练效果的核心因素。
+
+两者共同指向：**好的 Agent 系统 = 精心设计的 Harness + Harness-aware 的训练方法**。
+
 ## 相关链接
 
 - [[agent-production-evaluation]] - Agent 生产评估三层次（上线前/运行中/事故后）
 - [[enterprise-skill-architecture]] - 企业级 Skill 体系
 - [[test-time-compute-scaling]] - 推理时计算扩展（对比参考）
+- [[tool-use-rl-collapse]] - 工具调用 RL 崩溃机制（Harness 与 RL 的交叉点）
 
 ## 标签
 

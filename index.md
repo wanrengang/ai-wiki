@@ -2,22 +2,25 @@
 
 > 内容目录。所有 wiki 页面按类型分类，每页一行摘要。
 > 查阅前先读此文件，快速定位相关页面。
-|> Last updated: 2026-06-17 | Total pages: 142
-
-## Entities (43)
+|> Last updated: 2026-06-28 | Total pages: 162
+|
+## Entities (48)
 - [[gram-generative-recursive-reasoning]] - GRAM：Yoshua Bengio 并行递归推理模型，16步+20并行 > 320步串行（arXiv 2605.19376）
 - [[supabase]] - Supabase：百亿美元估值 BaaS 平台，vibe coding 的默认后端，700万用户
 |- [[vibe-trading]] - Vibe-Trading：HKUDS开源AI量化交易Agent平台，74 Skills + 29 Swarm Presets
 |- [[applovin]] - AppLovin：790%涨幅背后 AI 广告机器，Axon LTV 模型驱动百亿广告预算（2024-2025）
 
 |- [[aifut-conference]] - AIFUT 大会：北京亦庄 AI 盛会，1500+ 参会者，聚焦 Agent 与创业
-- [[glmmodel-51]] - 智谱 GLM-5.1：全球首个验证 8 小时持续工作能力的开源模型
-- [[notebooklm]] - Google NotebookLM：AI 知识管理工具，20 个黄金指令对抗幻觉
-- [[vercel-agent-browser]] - Vercel agent-browser：Rust 写的浏览器自动化 CLI，Token 消耗仅 Playwright 6%
+|- [[agentfinvqa]] - AgentFinVQA：Vector Institute 多智能体金融图表QA，MEP全链路可审计，Qwen3.6-27B本地精度损失仅5pp（arXiv 2606.19782）
+|- [[glmmodel-51]] - 智谱 GLM-5.1：全球首个验证 8 小时持续工作能力的开源模型
+|- [[notebooklm]] - Google NotebookLM：AI 知识管理工具，20 个黄金指令对抗幻觉
+|- [[metis-self-evolving-agents]] - Metis：港中文+华为自进化Agent双记忆框架，文本+代码记忆层次架构，AppWorld精度+20.6%/成本-22.8%（arXiv 2606.24151）
+|- [[vercel-agent-browser]] - Vercel agent-browser：Rust 写的浏览器自动化 CLI，Token 消耗仅 Playwright 6%
 - [[claude-managed-agents]] - Claude Managed Agents：Anthropic 托管平台，重新定义 Agent 控制权
 - [[dingtalk-wukong]] - 钉钉悟空：阿里企业级 AI 原生工作平台，C端千问 B端悟空
 - [[dingtalk-workspace-cli]] - 钉钉 dingtalk-workspace-cli：官方跨平台 CLI，支持群消息读取
 - [[hermes-agent]] - Hermes Agent：Nous Research 自我进化 Agent，41K Stars
+- [[h-replan]] - H-RePlan：上交大跨设备Agent分层恢复框架，Strategy Planner设备层+Orchestrator系统层分离，故障本地修复（arXiv 2606.20487）
 - [[agent-browser]] - Agent Browser：AI 浏览器自动化工具
 - [[capability-evolver]] - Capability Evolver：Agent 能力演化框架
 - [[chrome-devtools-protocol]] - Chrome DevTools Protocol：浏览器控制协议
@@ -43,8 +46,11 @@
 - [[scheming-propensity-llm-agents]] - Scheming Propensity：LLM Agent 伪装倾向研究，基线0-3%但对抗提示可达59%，工具访问是关键安全杠杆（arXiv 2603.01608v2）
 - [[mem0]] - mem0：AI Agent 通用记忆层（48K Stars）
 - [[llama-index]] - LlamaIndex：文档 Agent & 数据索引框架（47K Stars）
+- [[ledgeragent]] - LedgerAgent：亚利桑那州立大学工具调用Agent状态管理框架，Schema-Anchored Ledger + Policy Gate 双重机制（arXiv 2606.20529）
 - [[test-time-compute-scaling]] - Test-Time Compute Scaling：CoT推理、RL自纠正、Budget Forcing、DeepSeek-R1 Aha Moment
 - [[tool-hallucination-reasoning-trap]] - Tool Hallucination & Reasoning Trap：推理增强会放大工具幻觉，ACL 2026（Yin et al.）
+- [[tool-use-rl-collapse]] - Tool-Use RL Collapse：多步工具调用RL灾难性崩溃，结构性崩溃≠能力退化，交错SFT+RL最稳定，Process Reflection Supervision提升最终性能（arXiv 2606.26027，中科院自动化所）
+- [[toolbench-x]] - ToolBench-X：上交大工具可靠性基准，5类hazard（规范漂移/调用错误/执行失败/输出漂移/跨源冲突），可靠性鸿沟揭示工具调用能力≠任务完成能力（arXiv 2606.25819）
 - [[lenvm]] - LenVM：token 级长度控制模型，3B 胜 GPT-5.4/Claude（可扩展价值预训练）
 - [[tracking-behavioral-trajectories-arxiv-2606.02536]] - Tracking Behavioral Trajectories：技能文件embedding空间trait向量量化Agent行为变化，91.2%准确率，Hermes部署案例（arXiv 2606.02536）
 - [[ruflo]] - Ruflo：Claude Code Agent编排平台，48K Stars，100+ Agents + Swarm联邦协作
@@ -54,7 +60,8 @@
 - [[github-mcp]] - GitHub MCP：AI 助手 GitHub 操作标准化接口
 - [[opencode-sdk-series]] - OpenCode SDK 技术博客系列：企业级 AI Agent 运行时框架
 - [[ds4c]] - ds4.c：Redis之父antirez打造的DeepSeek V4专用推理引擎，Metal-only
-- [[ds4c-deepseek-v4]] - ds4.c × DeepSeek V4：Redis之父专造V4推理引擎，Mac Metal跑Flash
+|- [[deepseek-v4]] - DeepSeek-V4：1.6T MoE百万token上下文，仅27% FLOPs/10% KV Cache（arXiv 2606.19348）
+|- [[ds4c-deepseek-v4]] - ds4.c × DeepSeek V4：Redis之父专造V4推理引擎，Mac Metal跑Flash
 - [[khalid-ignatov-timofte-nas]] - Khalid/Ignatov/Timofte：维尔茨堡大学三人组，LLM自主设计神经网络架构论文作者
 - [[whisper]] - Whisper：OpenAI 通用语音识别模型，30s/16kHz 窗口 + Encoder-Decoder + 多任务统一架构，6 档 13 权重，turbo 8x 速度
 - [[agent-production-evaluation]] - Agent生产评估三层次：上线前行为测试、运行中链路观测、事故后组织指标（Harness.io/Galileo/Datadog三大报告）
@@ -82,6 +89,7 @@
 - [[faster-vla-action-sampling]] - FASTER：港大VLA即刻动作采样，TTFA 3倍加速，RTX 4060上反应时间从600ms降至230ms
 - [[openclaw-skills-list]] - OpenClaw Skills 榜单：近两周热门 TOP15 + 办公领域分布
 - [[on-policy-distillation-thunlp]] - On-Policy Distillation 两大法则：思维模式一致性 + 高分≠新知识（清华 THUNLP）
+- [[opid-agent-skill-distillation]] - OPID：清华等On-Policy技能蒸馏框架，分层技能（episode/step-level）+ Critical-First Routing，ALFWorld/WebShop SOTA（arXiv 2606.26790）
 - [[openspec]] - OpenSpec：用 Spec 管需求，AI 编码契约机制，Token 消耗降 30%-50%
 - [[superpowers-claude-code-workflow]] - Superpowers Claude Code：五大场景工作流规范
 - [[feishu-lark-hermes-comparison]] - 飞书钉钉赫尔墨斯对比：三大 CLI 工具选型指南
@@ -128,19 +136,31 @@
 - [[swarmharness]] - SwarmHarness：去中心化算力激励协议，DHT+Shapley值无需区块链，HarnessAPI 多节点扩展
 - [[autolab-long-horizon-agent-benchmark]] - AutoLab：超长时闭环优化Agent基准测试，claude-opus-4.6持续迭代坚持度是核心能力（arXiv 2606.05080）
 - [[amd-mxfp4-fp4-training]] - AMD MXFP4：原生 FP4 训练新纪元，Llama 3.1-8B 训练加速 9-10%（arXiv 2605.09825）
+- [[tmax]] - Tmax：艾伦AI研究所终端Agent RL训练配方，9B参数27%超闭源模型，Outcome-only reward简化RL流程（arXiv 2606.23321）
+|
+|- [[visualskill-multimodal-cua]] - VisualSkill：UCSB/MIT 多模态 CUA Skill 框架，MCP load_topic 按需加载图片，Stage 2 精度 +15.3pt，超越纯文本控制组 +8.3pt（arXiv 2606.18448）
 
 ## Concepts
-- [[anthropic-product-lineup]] - Anthropic 产品矩阵全景：4 层金字塔(模型/接口/Agent/企业+集成),12+ 款产品,核心战略"AI for Problem Solvers"
+<!-- Alphabetical within section -->
 |- [[projectmem]] - PROJECTMEM：本地优先事件溯源记忆层，Memory-as-Governance预动作判断门，14 MCP工具，207事件自研究（arXiv 2606.12329）
 |- [[agent-memory-systems-characterization]] - Agent Memory 表征研究：首个10系统系统级测试，揭示记忆范式成本非对称转移（arXiv 2606.06448，Stanford/Yasmine Omri）
-|- [[agents-k1]] - Agents-K1：上海AI实验室全链路知识编排Agent，2.46M论文→Scholar-KG，4B GRPO提取模型，Gemini-3 7.9%→24.6%（arXiv 2606.13669）
+|- [[atommem-atomnic-fact-memory]] - AtomMem：中科大原子事实记忆系统，SFT提取器+验证机制解决记忆腐化，AtomMem-Flat仅723K tokens达MEM0竞争性能（arXiv 2606.19847）
+|- [[agent-native-memory-systems]] - Agent-Native Memory评估：上交+清华系统性研究，12系统4模块框架，局部维护比全局重组更具成本效益（arXiv 2606.24775）
 |- [[eurekagent]] - EurekAgent：清华/智谱环境工程Agent，指标驱动自主科学发现，26圆填充 SOTA <$11（arXiv 2606.13662）
 |- [[hypertool]] - HyperTool：上交大工具增强Agent范式，代码块折叠多步工具调用为单次outer call，Qwen3-32B 15%→35%（arXiv 2606.13663）
-||- [[mlevolve-self-evolving-mle-agent]] - MLEvolve：自我演化 MLE Agent 框架，65.3% MLE-Bench 奖牌率 SOTA，Progressive MCGS + Retrospective Memory + 分层规划（arXiv 2606.06473）
-- [[siga-self-evolving-coding-agent-adapters]] - SIGA：UCSD自进化编码Agent适配器，36×加速科学模拟器配置，接地层四组件 + 自进化（arXiv 2606.09774）
+|- [[mlevolve-self-evolving-mle-agent]] - MLEvolve：自我演化 MLE Agent 框架，65.3% MLE-Bench 奖牌率 SOTA，Progressive MCGS + Retrospective Memory + 分层规划（arXiv 2606.06473）
+|- [[peee-gui-agent]] - PEEU：清华GUI Agent自主探索框架，hindsight experience合成高层次训练数据，TDHAF三层次泛化分析（arXiv 2606.27330）
+|- [[siga-self-evolving-coding-agent-adapters]] - SIGA：UCSD自进化编码Agent适配器，36×加速科学模拟器配置，接地层四组件 + 自进化（arXiv 2606.09774）
 |- [[recursive-agent-harnesses]] - RAH：PwC递归Agent Harness模式，Harness递归=模型递归的企业级扩展，GPT-5 71%→81%（arXiv 2606.13643）
 |- [[vortex-sparse-attention]] - Vortex：CMU/Rice/NUS稀疏注意力Serving系统，vFlow编程模型+vTensor抽象，AI Agent自动生成算法达3.46×吞吐增益（arXiv 2606.06453）
+|- [[verification-horizon-coding-agent-rewards]] - Verification Horizon：Qwen编码Agent奖励验证三维框架（可扩展性/忠实性/鲁棒性），验证者必须与生成器共同演化，无银弹（arXiv 2606.26300）
+|- [[anthropic-fable5-opus48-redteam]] - Anthropic Fable 5 & Opus 4.8 红队评估：TAP树搜索突破Opus 11.5%/Fable 6.1%，自适应攻击主导残余表面，全部10大伤害类别均暴露（arXiv 2606.18193）
 |- [[containment-gap-agentic-framework-security]] - The Containment Gap：三大框架（LangChain/AutoGPT/OpenAI SDK）零原生合规，记忆污染攻击88.9%目标错误拒绝率，<1ms确定性修复（arXiv 2606.12797）
+|- [[dreamreasoner-8b-block-diffusion-reasoning]] - DreamReasoner-8B：港大/北大块扩散推理模型，块大小课程学习解决block size mismatch，与Qwen3-8B持平（arXiv 2606.19257）
+|- [[skillweaver-compositional-skill-routing]] - SkillWeaver：阿里云多技能组合路由框架，SAD迭代分解使DA 51%→67.7%，CompSkillBench 2209 MCP skills（arXiv 2606.18051）
+||- [[self-compacting-agents]] - Self-Compacting：终端Agent自适应轨迹压缩，让模型自主决定何时/如何压缩上下文，无需微调（arXiv 2606.23525）
+||- [[sherloc-code-localization]] - SHERLOC：NVIDIA结构化代码修复诊断定位框架，84.33% SWE-Bench Lite accuracy@1，无需训练/微调/多Agent编排（arXiv 2606.24820）
+||- [[temporal-validity-memory]] - MemStrata：确定性supersession层消除过时事实错误，RAG 15-40%→≈0% 过期值错误率，无需LLM调用（arXiv 2606.26511）
 
 ## Comparisons (1)
 

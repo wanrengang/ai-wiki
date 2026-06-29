@@ -4,6 +4,139 @@
 > 格式：`## [YYYY-MM-DD] action | subject`
 > Actions: ingest, update, query, lint, create, archive, delete
 
+## [2026-06-28] ingest | Verification Horizon — 编码Agent奖励验证三维框架
+
+- ArXiv: The Verification Horizon: No Silver Bullet for Coding Agent Rewards（arXiv 2606.26300，Qwen团队）
+  - 核心洞察：验证信号三维度（可扩展性/忠实性/鲁棒性）无法同时满足；四种奖励构建（单元测试/交互式Agent裁判/用户裁判/自动化Agent验证）；验证者必须与生成器共同演化
+  - raw/papers/: 2026-06-28-verification-horizon-coding-agent-rewards.md（新建，165K chars）
+  - concepts/: concepts/verification-horizon-coding-agent-rewards.md（新建）
+  - 跨链接：verification-horizon → [[harness-engineering]], [[tool-use-rl-collapse]], [[test-time-compute-scaling]], [[codex-goal-mode-ai-science]], [[agent-drift-multi-agent-systems]]（均OK）
+
+- WeRSS：DB仍停滞在2026-05-24（token过期），无可用新文章
+- Total pages: 161 → 162
+
+## [2026-06-27] ingest | OPID Agentic RL技能蒸馏 + MemStrata时态有效性记忆
+
+- ArXiv: OPID: On-Policy Skill Distillation for Agentic Reinforcement Learning（arXiv:2606.26790，清华/浙大/CUHK/NTU/Tongji）
+  - 核心洞察：从on-policy轨迹中直接提取分层技能监督（episode-level + step-level），Critical-First Routing，RL为主+密集 hindsight监督
+  - raw/papers/: 2026-06-27-opid-on-policy-skill-distillation-agentic-rl.md（新建）
+  - concepts/: concepts/opid-agent-skill-distillation.md（新建）
+  - 跨链接：opid → [[on-policy-distillation-thunlp]], [[tool-use-rl-collapse]], [[harness-engineering]], [[test-time-compute-scaling]], [[mlevolve-self-evolving-mle-agent]], [[self-compacting-agents]]（均OK）
+
+- ArXiv: Temporal Validity in Retrieval Memory（MemStrata，arXiv:2606.26511）
+  - 核心洞察：RAG无法处理时态有效性，cosine similarity区分矛盾事实AUROC 0.59；确定性supersession账本，过时错误率RAG 15-40%→≈0%
+  - raw/papers/: 2026-06-27-memstrata-temporal-validity-retrieval-memory.md（新建）
+  - concepts/: concepts/temporal-validity-memory.md（新建）
+  - 跨链接：temporal-validity-memory → [[agent-native-memory-systems]], [[atommem-atomnic-fact-memory]], [[rag]], [[decoction-experience-memory]], [[mem0]]（均OK）
+
+- WeRSS：DB最新文章仍停滞在2026-05-24（token过期一个月），无新内容；当日ArXiv入库2篇
+- Total pages: 159 → 161
+
+## [2026-06-26] ingest | Tool-Use RL结构性崩溃 + ToolBench-X基准 + Harness-PostTraining交互
+
+- ArXiv: Why Multi-Step Tool-Use Reinforcement Learning Collapses（arXiv:2606.26027，中科院自动化所）
+  - 核心洞察：多步工具调用RL→灾难性崩溃（奖励骤降、KL散度飙升）；崩溃≠能力退化，而是控制token结构损坏；SFT预训练有效但交错SFT+RL最优
+  - raw/papers/: 2026-06-26-tool-rl-collapse.md（新建）
+  - concepts/: concepts/tool-use-rl-collapse.md（新建）
+  - 跨链接：tool-use-rl-collapse → [[harness-engineering]], [[test-time-compute-scaling]], [[toolbench-x]], [[agent-drift-multi-agent-systems]], [[skillweaver-compositional-skill-routing]], [[hypertool]]（均OK）
+
+- ArXiv: ToolBench-X: Benchmarking Tool-Using Agents under Tool-Environment Unreliability（arXiv:2606.25819，上交大）
+  - 核心洞察：5类hazard（Spec Drift/Invocation Error/Execution Failure/Output Drift/Cross-source Conflict）；可靠性鸿沟=工具调用能力≠任务完成能力；定向恢复提示比test-time scaling更有效
+  - raw/papers/: 2026-06-26-toolbench-x-benchmark-2606.25819.md（新建）
+  - concepts/: concepts/toolbench-x.md（新建）
+  - 跨链接：toolbench-x → [[tool-use-rl-collapse]], [[harness-engineering]], [[hypertool]], [[skillweaver-compositional-skill-routing]], [[agent-production-evaluation]]（均OK）
+
+- ArXiv: The Interplay of Harness Design and Post-Training in LLM Agents（arXiv:2606.25447）
+  - 核心洞察：Harness设计与Post-Training深度交互；Harness-aware Post-training提升分布内+鲁棒适应OOD；相同任务/模型，仅辅助信息呈现方式不同→截然不同成功率
+  - raw/papers/: 2026-06-26-harness-design-post-training-2606.25447.md（新建）
+  - concepts/harness-engineering.md（更新：新增"Harness与Post-Training的交互"章节，updated→2026-06-26）
+
+- WeRSS：DB最新文章仍停滞在2026-05-24（token过期近一个月），无新内容
+- Total pages: 156 → 158
+
+## [2026-06-25] ingest | Metis自进化Agent + SHERLOC代码定位 + Agent生产评估补充入库
+
+- ArXiv: Metis: Bridging Text and Code Memory for Self-Evolving Agents（港中文+华为+武汉大学，arXiv:2606.24151）
+  - 核心洞察：首个隔离文本记忆vs代码记忆的对照研究；双表示层次记忆架构（执行计划/环境事实/陷阱→选择性结晶为工具）；AppWorld精度+20.6%/成本-22.8%
+  - raw/papers/: 2026-06-25-metis-self-evolving-agents.md（新建）
+  - entities/: entities/metis-self-evolving-agents.md（新建）
+  - 跨链接：metis → [[mem0]], [[decoction-experience-memory]], [[mlevolve-self-evolving-mle-agent]], [[self-compacting-agents]], [[agent-native-memory-systems]], [[test-time-compute-scaling]], [[agent-drift-multi-agent-systems]]（均OK）
+
+- ArXiv: SHERLOC: Structured Diagnostic Localization for Code Repair Agents（NVIDIA+TU Darmstadt，arXiv:2606.24820）
+  - 核心洞察：代码修复Agent定位问题（50%预算耗在定位）；结构化诊断=定位≠文件检索；84.33% SWE-Bench Lite accuracy@1；无需训练/微调/多Agent编排
+  - raw/papers/: 2026-06-25-sherloc-code-repair-agents.md（新建）
+  - concepts/: concepts/sherloc-code-localization.md（新建）
+  - 跨链接：sherloc → [[agentic-code-reasoning]], [[coda-arxiv-2605.19269]], [[harness-engineering]]（均OK）
+
+- WeChat: 机器之心 - Agent从「优等生」到「好员工」还差什么（2026-05-24）
+  - 核心洞察补充：Springer 15个主流Agent benchmark综述——零个纳入安全/成本评估，13个仅用二元成功指标；Benchmark能筛选能力起点但不等同生产验收
+  - raw/articles/: 2026-06-25-agent-production-eval-wechat.md（新建）
+  - concepts/agent-production-evaluation.md（更新：补充Springer 15-benchmark发现）
+
+- WeRSS：DB最新文章仍停滞在2026-05-24（token过期近一个月），无新内容；当日ArXiv入库2篇
+- Total pages: 154 → 156
+
+## [2026-06-25] ingest | Agent-Native Memory评估论文入库（arXiv 2606.24775）
+- ArXiv: Are We Ready For An Agent-Native Memory System?（上交+清华，arXiv:2606.24775）
+- 核心洞察：12个代表性Agent Memory系统系统性评估，数据管理视角4模块框架（表示存储/提取/检索路由/维护）；无单一架构主导所有场景，局部维护比全局重组更具成本效益；涵盖Mem0等主流系统
+- raw/papers/：2026-06-25-agent-native-memory-2606.24775.md（新建）
+- concepts/：concepts/agent-native-memory-systems.md（新建）
+- 跨链接：agent-native-memory-systems → [[mem0]], [[decoction-experience-memory]], [[agent-memory-systems-characterization]], [[atommem-atomnic-fact-memory]], [[test-time-compute-scaling]], [[agent-drift-multi-agent-systems]]（均OK）
+- WeRSS：DB最新文章仍停滞在2026-05-24（token过期一个月），当日内容已全部入库；今日仅ArXiv入库1篇
+- Total pages: 153 → 154
+
+## [2026-06-24] ingest | Tmax 终端Agent RL配方 + Self-Compacting 自适应轨迹压缩入库
+- ArXiv: Tmax: A Simple Recipe for Terminal Agents（Allen Institute for AI / 华盛顿大学，arXiv:2606.23321）
+- 核心洞察：9B参数仅用 outcome-only RL recipe 在 Terminal-Bench 2.0 达 27%，超越 GLM-5/Claude-Sonnet-4.6；数据生成三重奏（难度控制+人格+验证器多样化）；开源配方推进学术界终端 Agent 训练
+- raw/papers/：2026-06-24-tmax-terminal-agents.md（新建）
+- entities/：entities/tmax.md（新建）
+- 跨链接：tmax → [[harness-engineering]], [[autolab-long-horizon-agent-benchmark]], [[agent-drift-multi-agent-systems]], [[test-time-compute-scaling]]（均OK）
+- ArXiv: Self-Compacting: Adaptive Trajectory Compression for Language Model Agents（arXiv:2606.23525）
+- 核心洞察：模型自主决定何时/如何压缩积累的思维链和工具调用历史；两个推理时元素（压缩工具+触发规则）；无需微调；在6个基准+7个模型上匹配或超越固定间隔摘要
+- raw/papers/：2026-06-24-self-compacting-agents.md（新建）
+- concepts/：concepts/self-compacting-agents.md（新建）
+- 跨链接：self-compacting-agents → [[decoction-experience-memory]], [[mem0]], [[agent-memory-systems-characterization]], [[test-time-compute-scaling]]（均OK）
+- WeRSS：DB 最新文章仍停滞在 2026-05-24（token 过期近一个月），无新内容；今日 ArXiv cs.CL listing 新发现两篇入库
+- Total pages: 151 → 153
+
+## [2026-06-22] ingest | AgentFinVQA 多智能体金融图表QA管道入库（arXiv 2606.19782）
+- ArXiv: AgentFinVQA: A Deployable Multi-Agent Pipeline for Auditable Financial Chart QA（Vector Institute，arXiv:2606.19782）
+- 核心洞察：六阶段管道（Plan→OCR→Ground→Colour-Area→Inspect→Verify），每样本输出 MEP 全链路可审计轨迹；验证器裁决可作为置信度信号指导人工审核路由；Qwen3.6-27B FP8 本地部署精度损失仅约 5pp，满足金融数据本地化要求
+- raw/papers/：2026-06-22-agentfinvqa-multi-agent-financial-chart-qa.md（新建）
+- entities/：entities/agentfinvqa.md（新建）
+- 跨链接：agentfinvqa → [[test-time-compute-scaling]], [[harness-engineering]], [[agent-drift-multi-agent-systems]], [[ledgeragent]], [[containment-gap-agentic-framework-security]], [[rag]], [[agent-memory-systems-characterization]]（均OK）
+- WeRSS：DB 最新文章停在 2026-05-24，WeRSS token 过期；ArXiv cs.CL listing 新发现 AgentFinVQA 入库
+- Total pages: 150 → 151
+
+## [2026-06-21] ingest | LedgerAgent 工具调用状态管理框架入库（arXiv 2606.20529）
+- ArXiv: LedgerAgent: Structured State for Policy-Adherent Tool-Calling Agents（亚利桑那州立大学/亚利桑那大学，arXiv:2606.20529）
+- 核心洞察：标准 Agent 任务状态隐式埋 prompt 导致两个失效模式（状态陈旧 + 策略违规）；LedgerAgent 用 Schema-Anchored Ledger（类型化字典 L:P→V，规范路径注入 prompt）+ Policy Gate（allow/revise/block 三态，28 个确定性 Predicate）解决；在 τ²-bench/Trait 四个领域提升 pass@k，高 k 值增益最大
+- raw/papers/：2026-06-21-ledgeragent-structured-state-policy-agent.md（新建）
+- entities/：entities/ledgeragent.md（新建）
+- 跨链接：ledgeragent → [[agent-drift-multi-agent-systems]], [[containment-gap-agentic-framework-security]], [[tool-hallucination-reasoning-trap]], [[mem0]], [[decoction-experience-memory]], [[test-time-compute-scaling]]（均OK）
+- WeRSS：DB 最新文章停在 2026-05-24，WeRSS token 过期近一个月；今日通过 ArXiv cs.CL listing 发现 LedgerAgent 入库
+- Total pages: 149 → 150
+
+## [2026-06-20] ingest | H-RePlan 跨设备Agent分层恢复框架入库（arXiv 2606.20487）
+
+- ArXiv: Beyond Global Replanning: Hierarchical Recovery for Cross-Device Agent Systems（上海交大/东南大学/清华大学，arXiv:2606.20487）
+- 核心洞察：H-RePlan 将跨设备故障恢复分为设备层（Strategy Planner 本地切换API/CLI/GUI）和系统层（Orchestrator 全局重规划）；CLFE 紧凑故障抽象连接两层；HeraBench 174变体评估，完美通过率36.78% vs UFO3-GUI 13.79%，Token成本降低5.44×
+- raw/papers/：2026-06-20-h-replan-hierarchical-cross-device-agent.md（新建）
+- entities/：entities/h-replan.md（新建）
+- 跨链接：h-replan → [[harness-engineering]], [[test-time-compute-scaling]], [[agent-drift-multi-agent-systems]], [[autolab-long-horizon-agent-benchmark]], [[recursive-agent-harnesses]]（均OK）
+- WeRSS：DB最新文章停在2026-05-24，多为已入库内容；主动发现 ArXiv H-RePlan 入库
+- Total pages: 148 → 149
+
+## [2026-06-19] ingest | DeepSeek-V4百万token上下文模型入库（arXiv 2606.19348）
+
+- ArXiv: DeepSeek-V4: Towards Highly Efficient Million-Token Context Intelligence（DeepSeek-AI, arXiv:2606.19348）
+- 核心洞察：混合注意力 CSA+HCA 将 1M token 场景 FLOPs 降至 V3.2 的 27%、KV Cache 降至 10%；mHC 残差流形约束解决数值稳定性；Muon 优化器加速收敛
+- raw/papers/：2026-06-19-deepseek-v4-million-token-context.md（新建）
+- entities/：entities/deepseek-v4.md（新建）
+- 跨链接：deepseek-v4 → [[ds4c]], [[ds4c-deepseek-v4]], [[test-time-compute-scaling]], [[gated-deltanet-2]], [[vortex-sparse-attention]]（均OK）
+- WeRSS：DB最新文章均为已入库内容（Verkor Design Conductor/VisualSkill今日已入库）；今日 ArXiv 新发现 DeepSeek-V4 为主动入库
+- Total pages: 146 → 147
+
 ## [2026-06-08] ingest | Anthropic Claude训练方法论入库（新智元2026-05-23）
 
 - WeChat: 新智元 - Anthropic自曝下一代Claude训练内幕！有人专职研究「性格」（Alex Albert × Peter Yang 35分钟访谈）
@@ -33,6 +166,16 @@
 - 跨链接：applovin → [[harness-engineering]], [[mcp]], [[kimi-k2-6-ai-infra]]（均OK）
 - WeRSS：DB最新文章停在2026-05-23/24，多为已入库内容（Verkor芯片设计sha256重复、slop危机已入库、Anthropic Opus 4.8为产品发布无技术深度）；Microsoft重组偏向组织新闻不入库
 - Total pages: 136 → 137
+
+## [2026-06-18] ingest | DreamReasoner-8B块扩散推理模型入库（arXiv 2606.19257）
+
+- ArXiv: DreamReasoner-8B: Block-Size Curriculum Learning for Diffusion Reasoning Models（港大/北大，arXiv:2606.19257）
+- 核心洞察：块扩散推理的核心矛盾是训练/推理 block size 粒度不匹配；块大小课程学习（从细到粗渐进）解决此问题，8B参数与 Qwen3-8B 持平
+- raw/papers/：2026-06-18-dreamreasoner-8b-block-diffusion-reasoning.md（新建）
+- 新增：concepts/dreamreasoner-8b-block-diffusion-reasoning.md（新建）
+- 跨链接：dreamreasoner → [[test-time-compute-scaling]], [[lilian-weng-why-we-think]], [[reasoning-in-memory-rim]]（均OK）
+- WeRSS：DB 最新文章均为已入库内容（AI芯片设计/METR报告 SHA256 重复）；仅此 1 篇 ArXiv 新入库
+- Total pages: 144 → 145
 
 ## [2026-06-12] ingest | EurekAgent环境工程Agent入库（arXiv 2606.13662）
 
@@ -799,3 +942,49 @@
 - 来源: raw/articles/2026-06-17-anthropic-product-lineup.md
 - 跨链接: [[claude永久大脑深度研究报告]]、[[claude-managed-agents]]、[[anthropic-claude-roadmap-2026]]、[[anthropic-roadmap-2027]]
 - index.md: Total 140 → 142
+
+## [2026-06-18] ingest | SkillWeaver + Anthropic Fable5/Opus48 Redteam 两篇 ArXiv 论文入库
+
+- ArXiv cs.CL 新列表发现，两篇高质量论文：
+  - **SkillWeaver** (2606.18051)：阿里云 Compositional Skill Routing 框架，三阶段 decompose-retrieve-compose，SAD 迭代分解使 DA 51%→67.7%（+32.7%，p<10⁻⁶），CompSkillBench 2209 MCP skills
+  - **Anthropic Fable5/Opus48 Redteam** (2606.18193)：AI4I 红队评估，7826 有害意图 × 4 攻击家族，TAP 树搜索突破 Opus 11.5%/Fable 6.1%，自适应攻击主导残余表面，静态混淆 near-zero
+- raw/papers/：2026-06-18-skillweaver-compositional-skill-routing-2606.18051.md（新建）、2026-06-18-anthropic-fable5-opus48-redteam-2606.18193.md（新建）
+- concepts/：concepts/skillweaver-compositional-skill-routing.md（新建）、concepts/anthropic-fable5-opus48-redteam.md（新建）
+- 跨链接：
+  - SkillWeaver → [[mcp]], [[harness-engineering]], [[enterprise-skill-architecture]], [[openclaw-skills-list]], [[test-time-compute-scaling]]（均OK）
+  - Redteam → [[containment-gap-agentic-framework-security]], [[tool-hallucination-reasoning-trap]], [[alignment-tampering-rlhf]], [[agent-drift-multi-agent-systems]]（均OK）
+- WeRSS：DB 最新文章 2026-05-24（25天前，WeRSS 同步断），多为新闻/内容重复，无新增入库
+- web_search 不可用（No web search provider），ArXiv listing browser 提取 85 篇，筛选入库 2 篇
+- Total pages: 142 → 144
+
+## [2026-06-19] ingest | VisualSkill 多模态 CUA Skill 论文入库（arXiv 2606.18448）
+
+- ArXiv: VisualSkill - UCSB/MIT CSAIL 多模态 Computer-Use Agent 技能框架
+- 核心内容：两阶段构建（文档挖掘 + 实时UI探索）、MCP load_topic 按需加载图片、Skill vs text-only 对比实验，Stage 2 VisualSkill 精度 0.456 vs text-only 0.373（+8.3pt），Claude Opus 4.6 达 0.456
+- raw/articles/：2026-06-19-visualskill-multimodal-skills-cua.md（新建）
+- concepts/：concepts/visualskill-multimodal-cua.md（新建）
+- 跨链接：→ [[skillweaver-compositional-skill-routing]], [[awesome-openclaw-skills]], [[github-mcp]], [[claude-managed-agents]], [[agent-drift-multi-agent-systems]], [[harness-engineering]]（均OK）
+|- WeRSS：DB 最新文章仍为 2026-05-24（30天前，同步断），新智元 Design Conductor 报道（Verkor 7nm CPU 12小时全流程 AI 生成）为已有论文更新，无新 raw 文件
+|- ArXiv listing：browser console 提取 90 篇 cs.CL 论文，VisualSkill 最相关（MCP skill 系统 + CUA benchmark + multimodal），入库 1 篇
+|- Total pages: 144 → 146
+
+## [2026-06-20] ingest | AtomMem 原子事实记忆系统入库（arXiv 2606.19847）
+
+- ArXiv: AtomMem: Building Simple and Effective Memory System for LLM Agents via Atomic Facts（中科大，arXiv:2606.19847）
+- 核心洞察：中科大 AtomMem 以原子事实为中心解决 LLM Agent 长期记忆问题；SFT Qwen3-14B Fact Executor 选择性提取高质量原子事实；Fact Verification 机制解决无约束 LLM 重写导致的记忆腐化；AtomMem-Flat 仅 723K tokens 达到 MEM0（55,300K）的竞争性能（77倍差距）
+- raw/papers/：2026-06-20-atommem-atomnic-fact-memory-llm-agents.md（新建）
+- concepts/：concepts/atommem-atomnic-fact-memory.md（新建）
+- 跨链接：atommem → [[mem0]], [[mnemis-ai-long-memory]], [[decoction-experience-memory]], [[agent-memory-systems-characterization]], [[rag]], [[test-time-compute-scaling]], [[harness-engineering]], [[projectmem]]（均OK）
+- WeRSS：DB 最新文章均为已入库旧批次（METR/Harness/AI Slop/AppLovin 等均已入库）；今日 ArXiv 新发现 AtomMem 为主动入库
+- Total pages: 147 → 148
+
+## [2026-06-26] ingest | PEEU GUI Agent 自主探索框架入库（arXiv 2606.27330）
+
+- ArXiv: Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization（清华，arXiv:2606.27330）
+- 核心洞察：PEEU 框架让小型 MLLM 通过自主探索+事后经验利用提升 GUI 任务规划能力；TDHAF 层次分析揭示：低层技能≠高层规划能力、高层任务训练提供更好跨网站泛化、直接训练优于检索
+- raw/papers/：2026-06-26-peee-gui-agent-2606.27330.md（新建）
+- concepts/：concepts/peee-gui-agent.md（新建）
+- 跨链接：peee-gui-agent → [[h-replan]]（均OK）
+- WeRSS：DB 最新文章停滞在 2026-05-24（token 过期约一个月），无可用新内容
+- web_search 不可用，ArXiv listing + urllib 提取 100 篇，筛选 PEEU 入库 1 篇
+- Total pages: 158 → 159

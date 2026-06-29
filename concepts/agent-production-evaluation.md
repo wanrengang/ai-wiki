@@ -1,7 +1,7 @@
 ---
 title: Agent生产评估体系
 created: 2026-06-02
-updated: 2026-06-02
+updated: 2026-06-25
 type: concept
 tags: [agent, engineering, evaluation, production, benchmark]
 sources: [raw/articles/2026-06-02-agent-production-evaluation.md]
@@ -58,6 +58,15 @@ Harness.io 的报告给出了三点结论：
 1. **执行框架需要生产评估体系配合** — 即便执行框架能提升运行稳定性，还需要判断 Agent 行为是否被测试、执行链路是否被记录、验证成本是否被计入
 2. **三类信号必须被捕捉** — 上线前行为有没有被测试覆盖，运行中链路有没有被观测，AI 引入后的验证成本有没有被组织指标捕捉
 3. **模型能力决定上限，Harness 决定你能用到上限的几成** — 没有 Harness，Opus 4.5 跑出的代码连编译都过不去；有了 Harness，小一档的模型也能稳定交付
+
+## 补充来源（2026-05-24 机器之心）
+
+Springer 对 **15 个主流 Agent benchmark** 的系统综述补充了关键发现：
+- **零个** benchmark 将安全性或安全防护纳入评分
+- **零个** benchmark 将成本效率纳入主要评估协议
+- 15 个中 **13 个** 主要依赖二元成功指标（判断任务是否完成），不说明执行过程是否稳定、可控、可复现
+
+来源：raw/articles/2026-06-25-agent-production-eval-wechat.md
 
 ## 相关链接
 
